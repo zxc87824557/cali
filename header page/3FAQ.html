@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en" style="font-family: 'Microsoft YaHei', sans-serif;">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- IE兼容 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- w3 -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- UK CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/css/uikit.min.css" />
+
+    <!-- UK JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script>
+
+    <!-- JQ -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="../js/Addhtml.js"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <title>常見問題</title>
+    <style>
+        .uk-accordion-title:focus,
+        .uk-accordion-title:hover {
+            color: #9383f3;
+        }
+
+        .fsz-1 {
+            font-size: 1em !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <script>PageHeader();</script>
+
+    <!-- 通用  ------------------------------------------------------------------------>
+
+    <!-- MD history.back ------------------------------------------------------------------------>
+    <div class="pt-1 d-md-none" style="background-color: #e1778d;">
+        <nav aria-label="breadcrumb">
+            <ul class="d-flex py-0 py-sm-1">
+                <button class="btn py-0" type="button" onclick="history.back()" value="回到上一頁">
+                    <i class="fas fa-angle-left text-light fa-lg"></i>
+                </button>
+                <li class="breadcrumb-item"><a href="../index.html" class="text-light">首頁</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <span class="text-light pl-2" id="copyTitle"></span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script>
+        $(document).ready(function () {
+            let title = $('title').text();
+            $('#copyTitle').html(title);
+        });
+    </script>
+
+
+    <div class="container-fluid px-0 py-0 m-0 bgc-flex" style="background-image: url(../img/桌機index_img/BG1.png);">
+        <div class="container pb-3">
+            <!-- PC ------------------------------------------------------------------------>
+            <div class="">
+                <div class="w3-xlarge lp1 text-123ts-color centerCenter py-3 d-none d-md-block" id="title"></div>
+                <!-- title設定 -->
+                <script>
+                    $(document).ready(function () {
+                        const title = $('title').text();
+                        $('#title').text(title);
+                    });
+                </script>
+
+                <ul uk-accordion class="bg-light py-3 px-5 w3-round-medium my-3">
+                    <!-- 1 -->
+                    <li class="uk-open">
+                        <a class="uk-accordion-title fsz-1 text-123ts-color" href="#">派大金網站的取款規定</a>
+                        <div class="uk-accordion-content">
+                            <p class="fsz-08 text-secondary">1. 一般存款沒有享受任何優惠的情況下，達到1倍流水即可出款
+                                <br>
+                                2. 一週三次，一天最多一次免手續費，每日超過免費次數，收取1%、2%手續費…最高5%
+                                <br>
+                                3. 第一次出金需要提供雙證件(身分證+駕照或健保卡)以及存摺依照客服指示放置物品，並傳送圖片檔案給客服確認
+                                <br>
+                                4. 有任何相關疑問請洽客服聯繫
+                                <br>
+                            </p>
+                        </div>
+                    </li>
+                    <!-- 2 -->
+                    <li>
+                        <a class="uk-accordion-title fsz-1 text-123ts-color" href="#">派大金網站的取款規定</a>
+                        <div class="uk-accordion-content">
+                            <p class="fsz-08 text-secondary">
+                                電腦版，點擊上方各廳流水>選擇要查詢的期間>點擊搜尋，即可查詢各廳流水
+                                <br>
+                                手機版，點擊右下方會員中心>各廳流水>選擇要查詢的期間>點擊搜尋，即可查詢各廳流水
+                                <br>
+                                ※流水最多查詢15天
+                                <br>
+                            </p>
+                        </div>
+                    </li>
+                    <!-- 3 -->
+                    <li>
+                        <a class="uk-accordion-title fsz-1 text-123ts-color" href="#">派大金網站的取款規定</a>
+                        <div class="uk-accordion-content">
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                    <tr class="text-secondary text-center w3-medium" style="background-color: #7dd2e8;">
+                                        <th colspan="2">取款條件</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="text-secondary text-center w3-medium" style="background-color: #f3dec3;">
+                                        <td>使用第三方存款渠道</td>
+                                        <td>使用VIP存款%</td>
+                                    </tr>
+                                    <tr class="text-secondary w3-medium text-center">
+                                        <td>一周三次免費,一天最多一次,每日超過免費次數,收取1%`2%手續費(最高5%)</td>
+                                        <td>每天一次免費次數,超過免費次數,收取1%`2%手續費(最高5%)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="fsz-08 text-secondary">
+                                *超過免費次數，最少收取手續費60
+                                <br>
+                                *假如手續費%超過60，依手續費%計算
+                                <br>
+                            </p>
+                        </div>
+                    </li>
+                    <!-- 4 -->
+                    <li>
+                        <a class="uk-accordion-title fsz-1 text-123ts-color" href="#">怎樣應允第三方cookies在手機裏?</a>
+                        <div class="uk-accordion-content">
+                            <p class="fsz-08 textOrange">[安卓] 瀏覽器 - Google Chrome</p>
+                            <p class="fsz-08 text-secondary">
+                                1. 在安卓手機或者平板電腦, 打開Chrome
+                                <br>
+                                2. 往右上角, 按更多然後設定
+                                <br>
+                                3. 按網頁設定然後Cookies
+                                <br>
+                                4. 可以從哪裏設定開或者關
+                                <br>
+                                5. 可選: 選擇應允第三方 cookies
+                                <br>
+                            </p>
+                            <p class="fsz-08 textOrange">[安卓] 瀏覽器 - Firefox</p>
+                            <p class="fsz-08 text-secondary">
+                                1. 打開 Firefox
+                                <br>
+                                2. 按目錄 (在某些設備的下方或者在網頁上的右上方)
+                                <br>
+                                3. 按設定 (或者需要按更多先)
+                                <br>
+                                4. 按隱私
+                                <br>
+                                5. 按啟用
+                                <br>
+                            </p>
+                            <p class="fsz-08 textOrange">[IOS] 瀏覽器 - Safari</p>
+                            <p class="fsz-08 text-secondary">
+                                1. 打開 Safari
+                                <br>
+                                2. 選擇設定
+                                <br>
+                                3. 在隱私&安全, 按阻止Cookies / 接受Cookies
+                                <br>
+                                4. 一直應允或者只有指定網頁被選擇
+                                <br>
+                            </p>
+                        </div>
+                    </li>
+                    <!-- 5 -->
+                    <li>
+                        <a class="uk-accordion-title fsz-1 text-123ts-color" href="#">怎樣清除緩存在手機裏?</a>
+                        <div class="uk-accordion-content">
+                            <p class="fsz-08 textOrange">[安卓] 瀏覽器 - Google Chrome</p>
+                            <p class="fsz-08 text-secondary">
+                                1. 打開Chrome
+                                <br>
+                                2. 按更多然後設定
+                                <br>
+                                3. 在高級設定裏， 按隱私然後選擇清除瀏覽數據
+                                <br>
+                                4. 在上面, 下拉的選單中 "清除資料"
+                                <br>
+                                5. 選擇想要清除的時間
+                                <br>
+                                6. 選擇想清除的選項
+                                <br>
+                                7. 按清除資料
+                                <br>
+                            </p>
+                            <p class="fsz-08 textOrange">[安卓] 瀏覽器 - Firefox</p>
+                            <p class="fsz-08 text-secondary">
+                                1. 打開 Firefox
+                                <br>
+                                2. 按目錄 (在某些設備的下方或者在網頁上的右上方)
+                                <br>
+                                3. 按設定 (或者需要先按更多)
+                                <br>
+                                4. 按清除資料
+                                <br>
+                                5. 選擇想要清除的資料然後按清除
+                                <br>
+                            </p>
+                            <p class="fsz-08 textOrange">[IOS] 瀏覽器 - Safari</p>
+                            <p class="fsz-08 text-secondary">
+                                1. 打開 Safari
+                                <br>
+                                2. 選擇設定
+                                <br>
+                                3. 按清除歷史資料
+                                <br>
+                                4. 按確定
+                                <br>
+                            </p>
+                        </div>
+                    </li>
+                    <!-- 6 -->
+                    <li>
+                        <a class="uk-accordion-title fsz-1 text-123ts-color" href="#">推薦金優惠介紹</a>
+                        <div class="uk-accordion-content">
+                            <p class="fsz-08 text-secondary">
+                                介紹好友即可獲得推薦金500，註冊時可填寫推薦碼(推薦人遊戲帳號)，並於註冊完成後24小時之內聯繫在線客服申請
+                                <br>
+                                1. 提供被推薦人帳號、電話、lineID予在線客服進行申請
+                                <br>
+                                2. 推薦人(舊會員)以及被推薦人(新會員)都須有存款1000以上之記錄(有領優惠之該筆存款不予計算)
+                                <br>
+                                3. 每位相同註冊資料包含IP位置的新會員僅限被推薦一次，且需完成銀行綁定
+                                <br>
+                                4. 舊會員可推薦多位好友，推薦優惠金無上限
+                                <br>
+                                5. 該優惠進行彩票以及棋牌類型投注將不計算出款流水
+                                <br>
+                                6. 若會員有重複註冊帳號惡意套取優惠或其他非正當盈利之行為，將扣除優惠以及所有不當盈利
+                                <br>
+                                7. 出款流水僅需一倍即可
+                                <br>
+                                8. 若同時推薦多位好友，每位都需有存1000以上之紀錄(有領優惠之該筆存款不予計算)，推薦人也需再存款1000以上之紀錄(有領優惠之該筆存款不
+                                予計算)
+                                <br>
+                                9. 僅限網站上直營會員享有此優惠
+                                <br>
+                            </p>
+                        </div>
+                    </li>
+                    <!-- 7 -->
+                    <li>
+                        <a class="uk-accordion-title fsz-1 text-123ts-color" href="#">推薦金優惠介紹</a>
+                        <div class="uk-accordion-content">
+                            <p class="fsz-08 text-secondary">
+                                所有取款條件與會員優惠，派大金擁有無可爭議的權利，若發現有套利客戶，對賭或不誠實獲取盈利之行為，將取消其優惠資格並扣除盈利和本金。
+                                包含對沖、單邊投注、翻倍投注、惡意套利等違規投注行為
+                                <br>
+                                ※一個會員僅能有一個遊戲帳號，若有多個遊戲帳號，核對資料後將會做關閉，無法做移分，只留一個遊戲帳號。
+                                <br>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <!-- H -->
+                <div class="d-md-none" style="min-height: 65px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <script>PCFooter();</script>
+    <script>MDFooter();</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

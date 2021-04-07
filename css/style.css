@@ -1,0 +1,230 @@
+/*  -------------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* -webkit-box-sizing: border-box; */
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: '微軟正黑體', 'Microsoft JhengHei', Arial, Helvetica, sans-serif; */
+    /* -ms-overflow-style: none; */
+    /* height: 100%; */
+    /* width: calc(100vw + 18px); */
+    /* overflow: auto; */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+:before, :after {
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+header, footer, div, nav, article, h2, h3, h4, h5, h6, hr, p, form, label, input, textarea, ul, li, img, span, font, strong, b, a, i {
+    text-align: left;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    line-height: 170%;
+    border-width: 0;
+    font-family: 'Noto Sans', 'Noto Sans TC', 'Noto Sans SC', sans-serif;
+    font-size: 16px;
+    word-wrap: break-word;
+    word-break: break-word;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+/* 通用 -------------------------------------------------------- */
+
+/* 遊戲背景 */
+
+.bgc-flex {
+    position: relative;
+    background: no-repeat;
+    display: flex;
+    background-size: cover;
+}
+
+.bgc-flex-v {
+    position: relative;
+    background: no-repeat fixed center;
+    /* background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat; */
+    background-size: cover;
+}
+
+/* 遊戲背景 */
+
+.game-flex {
+    position: relative;
+    background: no-repeat;
+    background-size: 100% 100%;
+}
+
+.game-v-flex {
+    position: relative;
+    background: no-repeat;
+    background-size: 100% auto;
+}
+
+/*  */
+.centerCenter {
+    text-align: center !important;
+    justify-content: center !important;
+    justify-self: center !important;
+    justify-items: center !important;
+    align-self: center !important;
+    align-items: center !important;
+    align-content: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.lp1 {
+    letter-spacing: .1em;
+}
+
+.lp2 {
+    letter-spacing: .2em;
+}
+
+.textPink {
+    color: #fb98ac;
+}
+
+.textPurple {
+    color: #9383f3;
+}
+
+.textOrange {
+    color: #ffbe67;
+}
+
+/* body -------------------------------------------------------- */
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #fff;
+    content: "/";
+}
+
+.text-123ts-color {
+    color: #fd788e;
+}
+
+.bg-123ts {
+    background-color: #fd788e;
+}
+
+.Blog-name-active:hover {
+    background-color: #fd788e !important;
+    color: #fff !important;
+}
+
+.Blog-name-active-a {
+    background-color: #fd788e !important;
+    color: #fff !important;
+}
+
+.fsz-08 {
+    font-size: 0.8em !important;
+}
+
+.fsz-06 {
+    font-size: 0.6em !important;
+}
+
+/* MD breadcrumb -------------------------------------------------------- */
+
+.breadcrumb {
+    background-color: transparent;
+}
+
+/* Blog -------------------------------------------------------- */
+
+.BlogGameBg {
+    background:linear-gradient(90deg, #1e1549 , #3d1f5e, #412e7d);
+    color: #ffffff;
+}
+
+.BlogGameTColor {
+    color: #f1cd6d;
+}
+
+.BlogTextColor{
+    color: #fff;
+}
+
+.pt-2 a .BlogGameTColor:hover {
+    color: rgb(202, 221, 255);
+}
+
+.rowEllipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* 多行加下列 */
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.rowBlogEllipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* 多行加下列 */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.btn-blog-active:hover {
+    background-color: #fd788e;
+    border-radius: 5px;
+    color: #fff !important;
+}
+
+/* index -------------------------------------------------------- */
+
+.bgc-loginbar-color {
+    background:linear-gradient(0deg, #f1cd6d , #f8e88d );
+}
+
+.bgc-header-color{
+    background:linear-gradient(90deg, #1e1549 , #3d1f5e, #412e7d);
+}
+
+.bgc-body-color {
+    background-color: #ebdef2;
+}
+
+.card{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.card a{
+    color: #f1cd6d;
+    font-size: 20px;
+    pointer-events: none
+}
+
+.blog_tColor{
+    color: #ffffff;
+}

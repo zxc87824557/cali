@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en" style="font-family: 'Microsoft YaHei', sans-serif;">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- IE兼容 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- w3 -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- UK CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/css/uikit.min.css" />
+
+    <!-- UK JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script>
+
+    <!-- JQ -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="../js/Addhtml.js"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <title>合營代理</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <script>PageHeader();</script>
+
+    <!-- 通用  ------------------------------------------------------------------------>
+
+    <!-- MD history.back ------------------------------------------------------------------------>
+    <div class="pt-1 d-md-none" style="background-color: #ffbe67;">
+        <nav aria-label="breadcrumb">
+            <ul class="d-flex py-0 py-sm-1">
+                <button class="btn py-0" type="button" onclick="history.back()" value="回到上一頁">
+                    <i class="fas fa-angle-left text-light fa-lg"></i>
+                </button>
+                <li class="breadcrumb-item"><a href="../index.html" class="text-light">首頁</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <span class="text-light pl-2" id="copyTitle"></span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script>
+        $(document).ready(function () {
+            let title = $('title').text();
+            $('#copyTitle').html(title);
+        });
+    </script>
+
+
+    <div class="container-fluid px-0 py-0 m-0 bgc-flex" style="background-image: url(../img/桌機index_img/BG1.png);">
+        <div class="container pb-3">
+            <!-- PC ------------------------------------------------------------------------>
+            <div class="">
+                <div class="w3-xlarge lp1 text-123ts-color centerCenter py-3 d-none d-md-block" id="title"></div>
+                <!-- title設定 -->
+                <script>
+                    $(document).ready(function () {
+                        const title = $('title').text();
+                        $('#title').text(title);
+                    });
+                </script>
+
+                <!-- 1 -->
+                <div class="row bg-light w3-round-medium py-3 px-5">
+                    <p class="text-123ts-color text-monospace col-12">合營制度</p>
+                    <p class="py-3 fsz-08 text-secondary text-justify col-12">1. 退傭</p>
+                    <!--  -->
+                    <table class="table table-striped">
+                        <thead>
+                            <tr class="text-123ts-color">
+                                <th>輸贏值</th>
+                                <th>退傭比例</th>
+                                <th>活躍人數</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="text-secondary">
+                                <td>10W</td>
+                                <td>20%</td>
+                                <td>有效會員數 3 個</td>
+                            </tr>
+                            <tr class="text-secondary">
+                                <td>10W-20W</td>
+                                <td>25%</td>
+                                <td>有效會員數 8 個</td>
+                            </tr>
+                            <tr class="text-secondary">
+                                <td>20W-30W</td>
+                                <td>30%</td>
+                                <td>有效會員數 15 個</td>
+                            </tr>
+                            <tr class="text-secondary">
+                                <td>30W-100W</td>
+                                <td>35%</td>
+                                <td>有效會員數 20 個</td>
+                            </tr>
+                            <tr class="text-secondary">
+                                <td>100W以上</td>
+                                <td>40%</td>
+                                <td>有效會員數 30 個</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--  -->
+                    <p class="py-3 col-12 centerCenter lp1 textPurple">獎金無上限</p>
+                    <p class="fsz-08 text-secondary text-justify col-12 centerCenter">若是想洽談其他的方式進行代理<br
+                            class="d-md-none">請聯繫客服</p>
+                </div>
+                <!-- 2 -->
+                <div class="row bg-light w3-round-medium py-3 px-5 my-3">
+                    <p class="fsz-08 text-secondary text-justify col-12">
+                        (1.) 統計周期為自然月的00:00:00-23:59:59
+                        <br>
+                        (2.) 退傭計算為下線的會員總負盈利值，若當月
+                        會員總輸贏值為正，將累計到下個月並扣除上月的
+                        正盈利值，直到總輸贏值為負且符合有效會員人數，
+                        即可啟動退傭模式
+                        <br>
+                        舉例:
+                        <br>
+                        A代理下線3月總輸贏值為-150000，優惠領取 2000，洗碼2000，計算退傭方式為 150000*0.25-2000-2000，固實得傭金為33500
+                        <br>
+                        B代理下線3月總輸贏值為+300000，優惠領取 5000，洗碼2000，4月總輸贏值為-500000，優惠 領取5000，洗碼2000，計算退傭方式為
+                        500000-300000=200000(對應退傭比例為25%)， 固200000*0.25-3月優惠7000-4月優惠 7000=50000-7000-7000=36000為實得傭金
+                        <br>
+                        (3.) 有效會員人數定義為當月有效投注額滿5萬， 為一個有效會員人數
+                        <br>
+                        (4.) 同IP、電話、銀行卡進行多帳號投注或是註冊 不同帳號，會視為1個有效會員
+                        <br>
+                    </p>
+                </div>
+                <!-- 3 -->
+                <div class="row bg-light w3-round-medium py-3 px-5 my-3">
+                    <p class="fsz-08 text-secondary text-justify col-12">
+                        2.佔成
+                        <br>
+                        周結算，業界最高，最高佔成60%
+                        <br>
+                        a. 活躍人數須滿5個以上
+                        <br>
+                        b. 活躍定義：當周累計流水達20000，存款
+                        5000，為一個活躍會員，當周滿5個活躍即
+                        可啟動分紅模式
+                        <br>
+                        c. 需繳保證金10萬(依照佔成不同保證金會有相
+                        對調整)
+                        <br>
+                        (1.) 統計周期為周一00:00:00-周日23:59:59
+                        <br>
+                        (2.) 盈利結算完畢會在周三匯款到指定收款銀行
+                        帳戶
+                        <br>
+                        (3.) 需共同負擔會員優惠，傭金結算完畢需扣除
+                        會員領取優惠，剩餘額度為實得傭金，例如
+                        該會員領取首存1000送500活動，該周代理
+                        盈利為2000，且當周傭金60%為例子，計算
+                        傭金2000*0.6=1200，再扣除優惠
+                        500*0.6=300，實得傭金為1200-300=900
+                        <br>
+                        (4.) 若下線盈利為正數，累計達保證金額度時，
+                        代理需於隔日中午12:00前將所佔成數金額
+                        匯款至我方指定收款帳戶，若未完成將停止
+                        下線下注
+                        <br>
+                        例如:
+                        <br>
+                        A代理(佔5成)，當日結算時若下線盈利為負數且累
+                        計到10萬，A代理需於隔日交收5萬至我們指定收
+                        款帳戶，若下線盈利為正數累計到30萬，A代理需
+                        於隔日交收15萬，以此類推
+                        <br>
+                        (5.) 若代理超過15天未補繳保證金費用，其代理
+                        資格將被取消
+                        <br>
+                        (6.) 如核實代理有參與不當套利行為，任你博有
+                        權直接終止代理資格並取消支付傭金且沒收
+                        保證金
+                        <br>
+                        (7.) 若當周有實得傭金可以領取，但活躍人數不
+                        足，將保留數據到下周累計，直到活躍人數
+                        足夠才得支付傭金款項
+                        <br>
+                        (8.) 同IP、電話、銀行卡進行多帳號投注，或註
+                        冊多帳號，只會視為1個活躍人數
+                    </p>
+                </div>
+                <!-- H -->
+                <div class="d-md-none" style="min-height: 65px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <script>PCFooter();</script>
+    <script>MDFooter();</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
