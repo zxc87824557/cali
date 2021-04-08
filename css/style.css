@@ -158,8 +158,10 @@ header, footer, div, nav, article, h2, h3, h4, h5, h6, hr, p, form, label, input
 /* Blog -------------------------------------------------------- */
 
 .BlogGameBg {
-    background:linear-gradient(90deg, #1e1549 , #3d1f5e, #412e7d);
+    /* background:linear-gradient(90deg, #1e1549 , #3d1f5e, #412e7d); */
+    background: rgba(0, 0, 0, 0.7);
     color: #ffffff;
+    border: #f1cd6d 1px solid;
 }
 
 .BlogGameTColor {
@@ -170,8 +172,12 @@ header, footer, div, nav, article, h2, h3, h4, h5, h6, hr, p, form, label, input
     color: #fff;
 }
 
-.pt-2 a .BlogGameTColor:hover {
-    color: rgb(202, 221, 255);
+a .BlogGameTColor:hover {
+    color: rgb(255, 255, 255);
+}
+
+.LikeColor{
+    color: #ea9127;
 }
 
 .rowEllipsis {
