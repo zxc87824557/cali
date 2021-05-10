@@ -149,6 +149,16 @@ header, footer, div, nav, article, h2, h3, h4, h5, h6, hr, p, form, label, input
     font-size: 0.6em !important;
 }
 
+.textSize{
+    font-size: 100px;
+}
+
+@media (min-width: 576px) {
+    .textSize {
+        font-size: 14px;
+    }
+}
+
 /* MD breadcrumb -------------------------------------------------------- */
 
 .breadcrumb {
@@ -233,4 +243,29 @@ a .BlogGameTColor:hover {
 
 .blog_tColor{
     color: #ffffff;
+}
+
+/* gamebt */
+.BlogGameBg1{
+    background:linear-gradient(90deg, #1e1549 , #3d1f5e, #412e7d);
+}
+
+/* .actClick a:hover{
+    background-color: #ea9127;
+} */
+
+.uk-tab>.uk-active>a {
+    color: #fff;
+    border-color: #ea9127;
+    background-color: #ea9127;
+}
+
+.uk-tab>*>a {
+    color: #ea9127;
+    font-size: 1.2rem;
+}
+
+.uk-tab>*>a:hover {
+    background-color: #ea9127;
+    color: #fff;
 }

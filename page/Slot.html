@@ -69,11 +69,22 @@
         }
 
         .ccc img:hover {
-            filter: drop-shadow(.8px .5px 6.9px #fb284b);
+            filter: drop-shadow(.8px .5px 6.9px #fb9f28);
         }
 
         .slotActive {
-            filter: drop-shadow(.8px .5px 6.9px #fb284b);
+            filter: drop-shadow(.8px .5px 6.9px #fb9f28);
+        }
+
+        .slotBtbg {
+            background: linear-gradient(90deg, #1e1549, #3d1f5e, #412e7d);
+            width: 106px;
+            height: 60px;
+            border-radius: 8px;
+        }
+
+        .pt-25 {
+            padding-top: 14px;
         }
     </style>
 </head>
@@ -81,7 +92,9 @@
 <body>
 
     <!-- Header -->
-    <script>PageHeader();</script>
+    <script>
+        PageHeader();
+    </script>
 
     <!-- 通用  ------------------------------------------------------------------------>
 
@@ -106,64 +119,45 @@
         });
     </script>
 
-    <div class="container-fluid px-0 py-0 m-0 bgc-flex ccc" style="background-image: url(../img/桌機index_img/BG1.png);">
+    <div class="container-fluid px-0 py-0 m-0 bgc-flex ccc"
+        style="background-image: url(../卡-img/桌機index_img/bg1.png);">
         <div class="container pb-3">
             <!-- 遊戲廠商區 -->
             <div class="row px-3 pb-3 pt-3 pt-md-5 noActive-a overflow-auto" uk-switcher>
                 <div class="col-4 col-md-3 col-lg px-1 my-1">
                     <a href="javascript:()">
-                        <img class="card_1 img-fluid noActive slotActive d-md-none"
-                            src="../img/桌機各分頁img/電子遊戲_Slot/gameBtn/c1.png" alt="">
-                        <img class="card_1 img-fluid noActive slotActive d-none d-md-block"
-                            src="../img/桌機各分頁img/電子遊戲_Slot/c1.png" alt="">
+                        <div class="slotBtbg centerCenter pt-25 d-md-none">
+                            <img class="card_1 img-fluid noActive slotActive d-md-none"
+                                src="../卡-img/手機各分頁img/電子遊戲_Slot/bt1.png" alt="">
+                        </div>
+                        <div class="d-none d-md-block">
+                            <img class="w-100 position-relative" src="../卡-img/桌機各分頁img/電子遊戲_Slot/gameBtn/bt1.png"
+                                alt="">
+                        </div>
                     </a>
                 </div>
                 <div class="col-4 col-md-3 col-lg px-1 my-1">
                     <a href="javascript:()">
-                        <img class="card_2 img-fluid noActive d-md-none" src="../img/桌機各分頁img/電子遊戲_Slot/gameBtn/c2.png"
-                            alt="">
-                        <img class="card_2 img-fluid noActive d-none d-md-block" src="../img/桌機各分頁img/電子遊戲_Slot/c2.png"
-                            alt="">
+                        <div class="slotBtbg centerCenter pt-1 d-md-none">
+                            <img class="card_1 img-fluid noActive slotActive d-md-none"
+                                src="../卡-img/手機各分頁img/電子遊戲_Slot/bt2.png" alt="">
+                        </div>
+                        <div class="d-none d-md-block">
+                            <img class="w-100 position-relative" src="../卡-img/桌機各分頁img/電子遊戲_Slot/gameBtn/bt2.png"
+                                alt="">
+                        </div>
                     </a>
                 </div>
                 <div class="col-4 col-md-3 col-lg px-1 my-1">
                     <a href="javascript:()">
-                        <img class="card_3 img-fluid noActive d-md-none" src="../img/桌機各分頁img/電子遊戲_Slot/gameBtn/c3.png"
-                            alt="">
-                        <img class="card_3 img-fluid noActive d-none d-md-block" src="../img/桌機各分頁img/電子遊戲_Slot/c3.png"
-                            alt="">
-                    </a>
-                </div>
-                <div class="col-4 col-md-3 col-lg px-1 my-1">
-                    <a href="javascript:()">
-                        <img class="card_4 img-fluid noActive d-md-none" src="../img/桌機各分頁img/電子遊戲_Slot/gameBtn/c5.png"
-                            alt="">
-                        <img class="card_4 img-fluid noActive d-none d-md-block" src="../img/桌機各分頁img/電子遊戲_Slot/c5.png"
-                            alt="">
-                    </a>
-                </div>
-                <div class="col-4 col-md-3 col-lg px-1 my-1">
-                    <a href="javascript:()">
-                        <img class="card_5 img-fluid noActive d-md-none" src="../img/桌機各分頁img/電子遊戲_Slot/gameBtn/c6.png"
-                            alt="">
-                        <img class="card_5 img-fluid noActive d-none d-md-block" src="../img/桌機各分頁img/電子遊戲_Slot/c6.png"
-                            alt="">
-                    </a>
-                </div>
-                <div class="col-4 col-md-3 col-lg px-1 my-1">
-                    <a href="javascript:()">
-                        <img class="card_6 img-fluid noActive d-md-none" src="../img/桌機各分頁img/電子遊戲_Slot/gameBtn/c7.png"
-                            alt="">
-                        <img class="card_6 img-fluid noActive d-none d-md-block" src="../img/桌機各分頁img/電子遊戲_Slot/c7.png"
-                            alt="">
-                    </a>
-                </div>
-                <div class="col-4 col-md-3 col-lg px-1 my-1">
-                    <a href="javascript:()">
-                        <img class="card_7 img-fluid noActive d-md-none" src="../img/桌機各分頁img/電子遊戲_Slot/gameBtn/c8.png"
-                            alt="">
-                        <img class="card_7 img-fluid noActive d-none d-md-block" src="../img/桌機各分頁img/電子遊戲_Slot/c8.png"
-                            alt="">
+                        <div class="slotBtbg centerCenter pt-25 d-md-none">
+                            <img class="card_1 img-fluid noActive slotActive d-md-none"
+                                src="../卡-img/手機各分頁img/電子遊戲_Slot/bt3.png" alt="">
+                        </div>
+                        <div class="d-none d-md-block">
+                            <img class="w-100 position-relative" src="../卡-img/桌機各分頁img/電子遊戲_Slot/gameBtn/bt3.png"
+                                alt="">
+                        </div>
                     </a>
                 </div>
             </div>
@@ -385,292 +379,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- 4 -->
-                <div class="">
-                    <form class="m-md-5 m-sm-3 m-3" action="uk-margin" method="post">
-                        <input class="signup-input px-1 py-1 py-md-2 py-sm-1 bg-light" type="text" placeholder="輸入游戲名字">
-                    </form>
-                    <div class="row centerCenter pt-3 pb-1 mt-2">
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00002.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00004.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00005.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00007.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00008.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00009.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="row centerCenter pb-1 mt-2">
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00010.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00011.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00012.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00013.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00016.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00017.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- 5 -->
-                <div class="">
-                    <form class="m-md-5 m-sm-3 m-3" action="uk-margin" method="post">
-                        <input class="signup-input px-1 py-1 py-md-2 py-sm-1 bg-light" type="text" placeholder="輸入游戲名字">
-                    </form>
-
-                    <div class="row centerCenter pb-1 mt-2">
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00010.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00011.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00012.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00013.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00016.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00017.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="row centerCenter pt-3 pb-1 mt-2">
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00002.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00004.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00005.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00007.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00008.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00009.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- 6 -->
-                <div class="">
-                    <form class="m-md-5 m-sm-3 m-3" action="uk-margin" method="post">
-                        <input class="signup-input px-1 py-1 py-md-2 py-sm-1 bg-light" type="text" placeholder="輸入游戲名字">
-                    </form>
-                    <div class="row centerCenter pt-3 pb-1 mt-2">
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00002.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00004.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00005.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00007.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00008.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00009.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="row centerCenter pb-1 mt-2">
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00010.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00011.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00012.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00013.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00016.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00017.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- 7 -->
-                <div class="">
-                    <form class="m-md-5 m-sm-3 m-3" action="uk-margin" method="post">
-                        <input class="signup-input px-1 py-1 py-md-2 py-sm-1 bg-light" type="text" placeholder="輸入游戲名字">
-                    </form>
-
-                    <div class="row centerCenter pb-1 mt-2">
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00013.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00016.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00017.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00010.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00011.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00012.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="row centerCenter pt-3 pb-1 mt-2">
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00002.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00004.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00005.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00007.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00008.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md col-sm-4 col-4 px-md-2 px-md-0">
-                            <a href="">
-                                <img class="img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/btn/cm00009.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
 
             <!-- 頁碼 -->
@@ -751,12 +459,16 @@
         });
     </script>
     <!-- Footer -->
-    <script>PCFooter();</script>
-    <script>MDFooter();</script>
+    <script>
+        PCFooter();
+    </script>
+    <script>
+        MDFooter();
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
 
 </body>
 
