@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en" style="font-family: 'Microsoft YaHei', sans-serif;">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- IE兼容 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- w3 -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- UK CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/css/uikit.min.css" />
+
+    <!-- UK JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script>
+
+    <!-- JQ -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="../js/Addhtml.js"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <title>品牌介紹</title>
+    <style>
+        .uk-subnav-pill>.uk-active>a {
+            background-color: transparent;
+            color: #fff;
+            border-color: #fd3773 !important;
+        }
+
+        .uk-subnav-pill>*>a:focus,
+        .uk-subnav-pill>*>a:hover {
+            background-color: transparent;
+            color: #fff;
+            border-color: #fd3773 !important;
+        }
+
+        .w3-opacity,
+        .w3-hover-opacity:hover {
+            /* opacity: 0.60; */
+            opacity: 1;
+        }
+
+        .w3-opacity,
+        .w3-hover-opacity {
+            opacity: 0.3;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <script>PageHeader();</script>
+
+    <!-- 通用  ------------------------------------------------------------------------>
+
+    <!-- MD history.back ------------------------------------------------------------------------>
+    <div class="pt-1 d-md-none BlogGameBg1">
+        <nav aria-label="breadcrumb">
+            <ul class="d-flex py-0 py-sm-1">
+                <button class="btn py-0" type="button" onclick="history.back()" value="回到上一頁">
+                    <i class="fas fa-angle-left text-light fa-lg"></i>
+                </button>
+                <li class="breadcrumb-item"><a href="../index.html" class="text-light">首頁</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <span class="text-light pl-2" id="copyTitle"></span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script>
+        $(document).ready(function () {
+            let title = $('title').text();
+            $('#copyTitle').html(title);
+        });
+    </script>
+
+
+    <div class="container-fluid p-0 m-0 bgc-flex-v" style="background-image: url(../卡-img/桌機index_img/bg1.png);">
+        <div class="container py-3">
+            <!-- PC ------------------------------------------------------------------------>
+            <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/Banner.png" alt="">
+            <div class="bg-theme">
+                <!--  -->
+                <ul class="uk-subnav uk-subnav-pill my-3 pt-3 px-3 pb-0 centerCenter mx-1 row" uk-switcher>
+                    <!--  -->
+                    <li class="col-2 col-md-4 p-1">
+                        <a href="#" class="border border-secondary w3-round-medium">
+                            <p class="fsz-08 centerCenter">
+                                真人娛樂
+                            </p>
+                        </a>
+                    </li>
+                    <li class="col-2 col-md-4 p-1">
+                        <a href="#" class="border border-secondary w3-round-medium">
+                            <p class="fsz-08 centerCenter">
+                                體育博彩
+                            </p>
+                        </a>
+                    </li>
+                    <li class="col-2 col-md-4 p-1">
+                        <a href="#" class="border border-secondary w3-round-medium">
+                            <p class="fsz-08 centerCenter">
+                                賓果彩票
+                            </p>
+                        </a>
+                    </li>
+                    <li class="col-2 col-md-4 p-1">
+                        <a href="#" class="border border-secondary w3-round-medium">
+                            <p class="fsz-08 centerCenter">
+                                電子游戲
+                            </p>
+                        </a>
+                    </li>
+                    <li class="col-2 col-md-4 p-1">
+                        <a href="#" class="border border-secondary w3-round-medium">
+                            <p class="fsz-08 centerCenter">
+                                棋牌遊戲
+                            </p>
+                        </a>
+                    </li>
+                    <li class="col-2 col-md-4 p-1">
+                        <a href="#" class="border border-secondary w3-round-medium">
+                            <p class="fsz-08 centerCenter">
+                                捕魚街機
+                            </p>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!--  -->
+                <ul class="uk-switcher uk-margin">
+                    <!-- 真人 -->
+                    <li class="">
+                        <div class="row p-3 m-0">
+                            <div
+                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
+                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/卡利百家樂.png" alt="">
+                            </div>
+                            <div
+                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
+                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/歐博百家樂.png" alt="">
+                            </div>
+                            <div
+                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
+                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/沙龍百家樂.png" alt="">
+                            </div>
+                            <div
+                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
+                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/DG百家樂.png" alt="">
+                            </div>
+                            <div
+                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
+                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/WM百家樂.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 體育 -->
+                    <li class="">
+                        <div class="row p-3 m-0">
+                            <div
+                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
+                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/卡利體育.png" alt="">
+                            </div>
+                            <div
+                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
+                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/Super體育.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 賓果 -->
+                    <li class="">
+                        <div class="row p-3 m-0">
+                            <div
+                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
+                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/Super六合彩.png" alt="">
+                            </div>
+                            <div
+                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
+                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/9K彩票.png" alt="">
+                            </div>
+                        </div>
+                    <!-- 真人 -->
+                    </li>
+                    <!-- 電子 -->
+                    <li class="">
+                        <div class="row p-3 m-0">
+                            <div
+                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
+                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/RTG電子.png" alt="">
+                            </div>
+                            <div
+                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
+                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/DT電子.png" alt="">
+                            </div>
+                            <div
+                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
+                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/SimplePlay電子.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 棋牌 -->
+                    <li class="">
+                        <div class="row p-3 m-0">
+                            <div
+                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
+                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/MG棋牌.png" alt="">
+                            </div>
+                            <div
+                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
+                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/至尊棋牌.png" alt="">
+                            </div>
+                        </div>
+                    <!-- 真人 -->
+                    </li>
+                    <!-- 捕魚 -->
+                    <li class="">
+                        <div class="row p-3 m-0">
+                            <div
+                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
+                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/SimplePlay捕魚王.png" alt="">
+                            </div>
+                            <div
+                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
+                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/RTG捕魚王.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- PCFooter -->
+            <div class="d-none d-md-block pt-3">
+                <script>
+                    PCFooter();
+                </script>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <script>MDFooter();</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

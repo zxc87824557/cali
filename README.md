@@ -1,3 +1,2 @@
-cali
-https://zxc87824557.github.io/cali/index.html
-卡利2.0
+Cali
+https://karta1252839.github.io/Cali/index.html

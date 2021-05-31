@@ -1,0 +1,1655 @@
+<!doctype html>
+<html lang="en" style='font-family: "Microsoft YaHei", sans-serif;'>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- IE兼容 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- w3 -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- UK CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/css/uikit.min.css" />
+
+    <!-- UK JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script>
+
+    <!-- JQ -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="../js/Addhtml.js"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>TransactionRecord 交易記錄</title>
+    <style>
+        .uk-input,
+        .uk-select,
+        .uk-textarea {
+            color: #103971;
+            border: transparent;
+            font-size: .8em !important;
+        }
+
+        .uk-input,
+        .uk-select:not([multiple]):not([size]) {
+            height: 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>indexLoginHeader();</script>
+    <!-- 交易記錄-------------------------------------------------------------------------- -->
+    <div class="container-fluid d-md-none changeBG" style="min-height: 650px;">
+        <!-- Title -->
+        <img src="../img/Featurespage/MemberCentre/TransactionRecord/Title.png" alt="" class="w-100 p-3">
+        <!--  -->
+        <div class="py-3">
+            <div class="row mx-1 modalBtn-c" uk-switcher>
+                <div class="btn col mx-1 modalBtn p-0 modalBtn-active">
+                    <p class="text-center pt-1">存款</p>
+                </div>
+                <div class="btn col mx-1 modalBtn p-0">
+                    <p class="text-center pt-1">提款</p>
+                </div>
+                <div class="btn col mx-1 modalBtn p-0">
+                    <p class="text-center pt-1">轉點</p>
+                </div>
+                <div class="btn col mx-1 modalBtn p-0">
+                    <p class="text-center pt-1">優惠</p>
+                </div>
+                <div class="btn col mx-1 modalBtn p-0">
+                    <p class="text-center pt-1">下注</p>
+                </div>
+            </div>
+
+            <ul class="uk-switcher uk-margin">
+                <!-- 存款 -->
+                <li>
+                    <div class="row px-3">
+                        <!-- 開始日期 -->
+                        <form class="col-12 col-sm-6 centerCenter py-2" action="uk-margin" method="post">
+                            <label>
+                                <span class="lp1 text-light">開始日期</span>
+                            </label>
+                            <input class="px-1 text-light bg-secondary w3-round-medium border border-dark"
+                                type="datetime-local" name="" id="">
+                        </form>
+                        <!-- 結束日期 -->
+                        <form class="col-12 col-sm-6 centerCenter py-2" action="uk-margin" method="post">
+                            <label>
+                                <span class="lp1 text-light">結束日期</span>
+                            </label>
+                            <input class="px-1 text-light bg-secondary w3-round-medium border border-dark"
+                                type="datetime-local" name="" id="">
+                        </form>
+                    </div>
+                    <!-- 搜尋 -->
+                    <div class="col-12 pb-2 pt-4">
+                        <button class="btn lp1 uk-modal-close modalBtn-active d-flex centerCenter w-100"
+                            type="button">搜尋</button>
+                    </div>
+
+                    <!--  -->
+                    <ul class="row mx-3 mt-3 modalBtn-e" style="background-color: #103971;" uk-switcher>
+                        <div class="btn col modalSBtn p-0 modalSBtn-active">
+                            <p class=" text-center  pt-1 pb-2">昨日</p>
+                        </div>
+                        <div class="btn col modalSBtn p-0">
+                            <p class=" text-center  pt-1 pb-2">今日</p>
+                        </div>
+                        <div class="btn col modalSBtn p-0">
+                            <p class=" text-center  pt-1 pb-2">本週</p>
+                        </div>
+                        <div class="btn col modalSBtn p-0">
+                            <p class=" text-center  pt-1 pb-2">上週</p>
+                        </div>
+                    </ul>
+
+                    <ul class="uk-switcher pt-3 px-3">
+                        <!-- 昨日 -->
+                        <div>
+                            <!-- 尚無任何記錄 -->
+                            <p class="col-12 centerCenter w3-round-large py-2 text-light"
+                                style="background-color: #1e6cd8;">
+                                昨日-尚無任何記錄</p>
+                            <!-- 資訊 -->
+                            <div class="pt-3 Announcement">
+                                <ul class="FAQ-btn row-cols-2 flex-wrap">
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
+                                    </li>
+                                    <li class="col-12 pr-0 d-flex justify-content-between">
+                                        <span class="date lp1 text-white-50" style="font-size: 0.75em;">
+                                            <script>
+                                                var x = new Date().toLocaleString();
+                                                $(".date").text(x);
+                                            </script>
+                                        </span>
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
+                                                style="margin-top: -2.5%;"></i></span>
+                                    </li>
+                                </ul>
+                                <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
+                                    style="display: none;background:#103971;">
+                                    <li class="lp1 col-12">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
+                                    </li>
+                                    <li class="col-12">
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 頁碼 -->
+                            <div class="text-center pt-3">
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                </div>
+                                <div class="btn text-white-50 modalBtn">1</div>
+                                <div class="btn text-white-50 modalBtn">2</div>
+                                <div class="btn text-white-50 modalBtn">3</div>
+                                <div class="btn text-white-50 modalBtn">4</div>
+                                <div class="btn text-white-50 modalBtn">5</div>
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- 今日 -->
+                        <div>
+                            <!-- 尚無任何記錄 -->
+                            <p class="col-12 centerCenter w3-round-large py-2 text-light"
+                                style="background-color: #1e6cd8;">
+                                今日-尚無任何記錄</p>
+                            <!-- 資訊 -->
+                            <div class="pt-3 Announcement">
+                                <ul class="FAQ-btn row-cols-2 flex-wrap">
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
+                                    </li>
+                                    <li class="col-12 pr-0 d-flex justify-content-between">
+                                        <span class="date lp1 text-white-50" style="font-size: 0.75em;">
+                                            <script>
+                                                var x = new Date().toLocaleString();
+                                                $(".date").text(x);
+                                            </script>
+                                        </span>
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
+                                                style="margin-top: -2.5%;"></i></span>
+                                    </li>
+                                </ul>
+                                <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
+                                    style="display: none;background:#103971;">
+                                    <li class="lp1 col-12">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
+                                    </li>
+                                    <li class="col-12">
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 頁碼 -->
+                            <div class="text-center pt-3">
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                </div>
+                                <div class="btn text-white-50 modalBtn">1</div>
+                                <div class="btn text-white-50 modalBtn">2</div>
+                                <div class="btn text-white-50 modalBtn">3</div>
+                                <div class="btn text-white-50 modalBtn">4</div>
+                                <div class="btn text-white-50 modalBtn">5</div>
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- 本週 -->
+                        <div>
+                            <!-- 尚無任何記錄 -->
+                            <p class="col-12 centerCenter w3-round-large py-2 text-light"
+                                style="background-color: #1e6cd8;">
+                                本週-尚無任何記錄</p>
+                            <!-- 資訊 -->
+                            <div class="pt-3 Announcement">
+                                <ul class="FAQ-btn row-cols-2 flex-wrap">
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
+                                    </li>
+                                    <li class="col-12 pr-0 d-flex justify-content-between">
+                                        <span class="date lp1 text-white-50" style="font-size: 0.75em;">
+                                            <script>
+                                                var x = new Date().toLocaleString();
+                                                $(".date").text(x);
+                                            </script>
+                                        </span>
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
+                                                style="margin-top: -2.5%;"></i></span>
+                                    </li>
+                                </ul>
+                                <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
+                                    style="display: none;background:#103971;">
+                                    <li class="lp1 col-12">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
+                                    </li>
+                                    <li class="col-12">
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 頁碼 -->
+                            <div class="text-center pt-3">
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                </div>
+                                <div class="btn text-white-50 modalBtn">1</div>
+                                <div class="btn text-white-50 modalBtn">2</div>
+                                <div class="btn text-white-50 modalBtn">3</div>
+                                <div class="btn text-white-50 modalBtn">4</div>
+                                <div class="btn text-white-50 modalBtn">5</div>
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- 上週 -->
+                        <div>
+                            <!-- 尚無任何記錄 -->
+                            <p class="col-12 centerCenter w3-round-large py-2 text-light"
+                                style="background-color: #1e6cd8;">
+                                上週-尚無任何記錄</p>
+                            <!-- 資訊 -->
+                            <div class="pt-3 Announcement">
+                                <ul class="FAQ-btn row-cols-2 flex-wrap">
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
+                                    </li>
+                                    <li class="col-12 pr-0 d-flex justify-content-between">
+                                        <span class="date lp1 text-white-50" style="font-size: 0.75em;">
+                                            <script>
+                                                var x = new Date().toLocaleString();
+                                                $(".date").text(x);
+                                            </script>
+                                        </span>
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
+                                                style="margin-top: -2.5%;"></i></span>
+                                    </li>
+                                </ul>
+                                <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
+                                    style="display: none;background:#103971;">
+                                    <li class="lp1 col-12">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
+                                    </li>
+                                    <li class="col-12">
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 頁碼 -->
+                            <div class="text-center pt-3">
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                </div>
+                                <div class="btn text-white-50 modalBtn">1</div>
+                                <div class="btn text-white-50 modalBtn">2</div>
+                                <div class="btn text-white-50 modalBtn">3</div>
+                                <div class="btn text-white-50 modalBtn">4</div>
+                                <div class="btn text-white-50 modalBtn">5</div>
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </ul>
+                </li>
+                <!-- 提款 -->
+                <li>
+                    <div class="row px-3">
+                        <p class="col-12 centerCenter">提款</p>
+                        <!-- 開始日期 -->
+                        <form class="col-12 col-sm-6 centerCenter py-2" action="uk-margin" method="post">
+                            <label>
+                                <span class="lp1 text-light">開始日期</span>
+                            </label>
+                            <input class="px-1 text-light bg-secondary w3-round-medium border border-dark"
+                                type="datetime-local" name="" id="">
+                        </form>
+                        <!-- 結束日期 -->
+                        <form class="col-12 col-sm-6 centerCenter py-2" action="uk-margin" method="post">
+                            <label>
+                                <span class="lp1 text-light">結束日期</span>
+                            </label>
+                            <input class="px-1 text-light bg-secondary w3-round-medium border border-dark"
+                                type="datetime-local" name="" id="">
+                        </form>
+                    </div>
+                    <!-- 搜尋 -->
+                    <div class="col-12 pb-2 pt-4">
+                        <button class="btn lp1 uk-modal-close modalBtn-active d-flex centerCenter w-100"
+                            type="button">搜尋</button>
+                    </div>
+
+                    <!--  -->
+                    <ul class="row mx-3 mt-3 modalBtn-e" style="background-color: #103971;" uk-switcher>
+                        <div class="btn col modalSBtn p-0 modalSBtn-active">
+                            <p class=" text-center  pt-1 pb-2">昨日</p>
+                        </div>
+                        <div class="btn col modalSBtn p-0">
+                            <p class=" text-center  pt-1 pb-2">今日</p>
+                        </div>
+                        <div class="btn col modalSBtn p-0">
+                            <p class=" text-center  pt-1 pb-2">本週</p>
+                        </div>
+                        <div class="btn col modalSBtn p-0">
+                            <p class=" text-center  pt-1 pb-2">上週</p>
+                        </div>
+                    </ul>
+
+                    <ul class="uk-switcher pt-3 px-3">
+                        <!-- 昨日 -->
+                        <div>
+                            <!-- 尚無任何記錄 -->
+                            <p class="col-12 centerCenter w3-round-large py-2 text-light"
+                                style="background-color: #1e6cd8;">
+                                昨日-尚無任何記錄</p>
+                            <!-- 資訊 -->
+                            <div class="pt-3 Announcement">
+                                <ul class="FAQ-btn row-cols-2 flex-wrap">
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
+                                    </li>
+                                    <li class="col-12 pr-0 d-flex justify-content-between">
+                                        <span class="date lp1 text-white-50" style="font-size: 0.75em;">
+                                            <script>
+                                                var x = new Date().toLocaleString();
+                                                $(".date").text(x);
+                                            </script>
+                                        </span>
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
+                                                style="margin-top: -2.5%;"></i></span>
+                                    </li>
+                                </ul>
+                                <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
+                                    style="display: none;background:#103971;">
+                                    <li class="lp1 col-12">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
+                                    </li>
+                                    <li class="col-12">
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 頁碼 -->
+                            <div class="text-center pt-3">
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                </div>
+                                <div class="btn text-white-50 modalBtn">1</div>
+                                <div class="btn text-white-50 modalBtn">2</div>
+                                <div class="btn text-white-50 modalBtn">3</div>
+                                <div class="btn text-white-50 modalBtn">4</div>
+                                <div class="btn text-white-50 modalBtn">5</div>
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- 今日 -->
+                        <div>
+                            <!-- 尚無任何記錄 -->
+                            <p class="col-12 centerCenter w3-round-large py-2 text-light"
+                                style="background-color: #1e6cd8;">
+                                今日-尚無任何記錄</p>
+                            <!-- 資訊 -->
+                            <div class="pt-3 Announcement">
+                                <ul class="FAQ-btn row-cols-2 flex-wrap">
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
+                                    </li>
+                                    <li class="col-12 pr-0 d-flex justify-content-between">
+                                        <span class="date lp1 text-white-50" style="font-size: 0.75em;">
+                                            <script>
+                                                var x = new Date().toLocaleString();
+                                                $(".date").text(x);
+                                            </script>
+                                        </span>
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
+                                                style="margin-top: -2.5%;"></i></span>
+                                    </li>
+                                </ul>
+                                <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
+                                    style="display: none;background:#103971;">
+                                    <li class="lp1 col-12">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
+                                    </li>
+                                    <li class="col-12">
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 頁碼 -->
+                            <div class="text-center pt-3">
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                </div>
+                                <div class="btn text-white-50 modalBtn">1</div>
+                                <div class="btn text-white-50 modalBtn">2</div>
+                                <div class="btn text-white-50 modalBtn">3</div>
+                                <div class="btn text-white-50 modalBtn">4</div>
+                                <div class="btn text-white-50 modalBtn">5</div>
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- 本週 -->
+                        <div>
+                            <!-- 尚無任何記錄 -->
+                            <p class="col-12 centerCenter w3-round-large py-2 text-light"
+                                style="background-color: #1e6cd8;">
+                                本週-尚無任何記錄</p>
+                            <!-- 資訊 -->
+                            <div class="pt-3 Announcement">
+                                <ul class="FAQ-btn row-cols-2 flex-wrap">
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
+                                    </li>
+                                    <li class="col-12 pr-0 d-flex justify-content-between">
+                                        <span class="date lp1 text-white-50" style="font-size: 0.75em;">
+                                            <script>
+                                                var x = new Date().toLocaleString();
+                                                $(".date").text(x);
+                                            </script>
+                                        </span>
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
+                                                style="margin-top: -2.5%;"></i></span>
+                                    </li>
+                                </ul>
+                                <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
+                                    style="display: none;background:#103971;">
+                                    <li class="lp1 col-12">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
+                                    </li>
+                                    <li class="col-12">
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 頁碼 -->
+                            <div class="text-center pt-3">
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                </div>
+                                <div class="btn text-white-50 modalBtn">1</div>
+                                <div class="btn text-white-50 modalBtn">2</div>
+                                <div class="btn text-white-50 modalBtn">3</div>
+                                <div class="btn text-white-50 modalBtn">4</div>
+                                <div class="btn text-white-50 modalBtn">5</div>
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- 上週 -->
+                        <div>
+                            <!-- 尚無任何記錄 -->
+                            <p class="col-12 centerCenter w3-round-large py-2 text-light"
+                                style="background-color: #1e6cd8;">
+                                上週-尚無任何記錄</p>
+                            <!-- 資訊 -->
+                            <div class="pt-3 Announcement">
+                                <ul class="FAQ-btn row-cols-2 flex-wrap">
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
+                                    </li>
+                                    <li class="col-12 pr-0 d-flex justify-content-between">
+                                        <span class="date lp1 text-white-50" style="font-size: 0.75em;">
+                                            <script>
+                                                var x = new Date().toLocaleString();
+                                                $(".date").text(x);
+                                            </script>
+                                        </span>
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
+                                                style="margin-top: -2.5%;"></i></span>
+                                    </li>
+                                </ul>
+                                <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
+                                    style="display: none;background:#103971;">
+                                    <li class="lp1 col-12">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
+                                    </li>
+                                    <li class="col-12">
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 頁碼 -->
+                            <div class="text-center pt-3">
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                </div>
+                                <div class="btn text-white-50 modalBtn">1</div>
+                                <div class="btn text-white-50 modalBtn">2</div>
+                                <div class="btn text-white-50 modalBtn">3</div>
+                                <div class="btn text-white-50 modalBtn">4</div>
+                                <div class="btn text-white-50 modalBtn">5</div>
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </ul>
+                </li>
+                <!-- 轉點 -->
+                <li>
+                    <div class="row px-3">
+                        <p class="col-12 centerCenter">轉點</p>
+                        <!-- 開始日期 -->
+                        <form class="col-12 col-sm-6 centerCenter py-2" action="uk-margin" method="post">
+                            <label>
+                                <span class="lp1 text-light">開始日期</span>
+                            </label>
+                            <input class="px-1 text-light bg-secondary w3-round-medium border border-dark"
+                                type="datetime-local" name="" id="">
+                        </form>
+                        <!-- 結束日期 -->
+                        <form class="col-12 col-sm-6 centerCenter py-2" action="uk-margin" method="post">
+                            <label>
+                                <span class="lp1 text-light">結束日期</span>
+                            </label>
+                            <input class="px-1 text-light bg-secondary w3-round-medium border border-dark"
+                                type="datetime-local" name="" id="">
+                        </form>
+                    </div>
+                    <!-- 搜尋 -->
+                    <div class="col-12 pb-2 pt-4">
+                        <button class="btn lp1 uk-modal-close modalBtn-active d-flex centerCenter w-100"
+                            type="button">搜尋</button>
+                    </div>
+
+                    <!--  -->
+                    <ul class="row mx-3 mt-3 modalBtn-e" style="background-color: #103971;" uk-switcher>
+                        <div class="btn col modalSBtn p-0 modalSBtn-active">
+                            <p class=" text-center  pt-1 pb-2">昨日</p>
+                        </div>
+                        <div class="btn col modalSBtn p-0">
+                            <p class=" text-center  pt-1 pb-2">今日</p>
+                        </div>
+                        <div class="btn col modalSBtn p-0">
+                            <p class=" text-center  pt-1 pb-2">本週</p>
+                        </div>
+                        <div class="btn col modalSBtn p-0">
+                            <p class=" text-center  pt-1 pb-2">上週</p>
+                        </div>
+                    </ul>
+
+                    <ul class="uk-switcher pt-3 px-3">
+                        <!-- 昨日 -->
+                        <div>
+                            <!-- 尚無任何記錄 -->
+                            <p class="col-12 centerCenter w3-round-large py-2 text-light"
+                                style="background-color: #1e6cd8;">
+                                昨日-尚無任何記錄</p>
+                            <!-- 資訊 -->
+                            <div class="pt-3 Announcement">
+                                <ul class="FAQ-btn row-cols-2 flex-wrap">
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
+                                    </li>
+                                    <li class="col-12 pr-0 d-flex justify-content-between">
+                                        <span class="date lp1 text-white-50" style="font-size: 0.75em;">
+                                            <script>
+                                                var x = new Date().toLocaleString();
+                                                $(".date").text(x);
+                                            </script>
+                                        </span>
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
+                                                style="margin-top: -2.5%;"></i></span>
+                                    </li>
+                                </ul>
+                                <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
+                                    style="display: none;background:#103971;">
+                                    <li class="lp1 col-12">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
+                                    </li>
+                                    <li class="col-12">
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 頁碼 -->
+                            <div class="text-center pt-3">
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                </div>
+                                <div class="btn text-white-50 modalBtn">1</div>
+                                <div class="btn text-white-50 modalBtn">2</div>
+                                <div class="btn text-white-50 modalBtn">3</div>
+                                <div class="btn text-white-50 modalBtn">4</div>
+                                <div class="btn text-white-50 modalBtn">5</div>
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- 今日 -->
+                        <div>
+                            <!-- 尚無任何記錄 -->
+                            <p class="col-12 centerCenter w3-round-large py-2 text-light"
+                                style="background-color: #1e6cd8;">
+                                今日-尚無任何記錄</p>
+                            <!-- 資訊 -->
+                            <div class="pt-3 Announcement">
+                                <ul class="FAQ-btn row-cols-2 flex-wrap">
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
+                                    </li>
+                                    <li class="col-12 pr-0 d-flex justify-content-between">
+                                        <span class="date lp1 text-white-50" style="font-size: 0.75em;">
+                                            <script>
+                                                var x = new Date().toLocaleString();
+                                                $(".date").text(x);
+                                            </script>
+                                        </span>
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
+                                                style="margin-top: -2.5%;"></i></span>
+                                    </li>
+                                </ul>
+                                <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
+                                    style="display: none;background:#103971;">
+                                    <li class="lp1 col-12">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
+                                    </li>
+                                    <li class="col-12">
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 頁碼 -->
+                            <div class="text-center pt-3">
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                </div>
+                                <div class="btn text-white-50 modalBtn">1</div>
+                                <div class="btn text-white-50 modalBtn">2</div>
+                                <div class="btn text-white-50 modalBtn">3</div>
+                                <div class="btn text-white-50 modalBtn">4</div>
+                                <div class="btn text-white-50 modalBtn">5</div>
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- 本週 -->
+                        <div>
+                            <!-- 尚無任何記錄 -->
+                            <p class="col-12 centerCenter w3-round-large py-2 text-light"
+                                style="background-color: #1e6cd8;">
+                                本週-尚無任何記錄</p>
+                            <!-- 資訊 -->
+                            <div class="pt-3 Announcement">
+                                <ul class="FAQ-btn row-cols-2 flex-wrap">
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
+                                    </li>
+                                    <li class="col-12 pr-0 d-flex justify-content-between">
+                                        <span class="date lp1 text-white-50" style="font-size: 0.75em;">
+                                            <script>
+                                                var x = new Date().toLocaleString();
+                                                $(".date").text(x);
+                                            </script>
+                                        </span>
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
+                                                style="margin-top: -2.5%;"></i></span>
+                                    </li>
+                                </ul>
+                                <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
+                                    style="display: none;background:#103971;">
+                                    <li class="lp1 col-12">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
+                                    </li>
+                                    <li class="col-12">
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 頁碼 -->
+                            <div class="text-center pt-3">
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                </div>
+                                <div class="btn text-white-50 modalBtn">1</div>
+                                <div class="btn text-white-50 modalBtn">2</div>
+                                <div class="btn text-white-50 modalBtn">3</div>
+                                <div class="btn text-white-50 modalBtn">4</div>
+                                <div class="btn text-white-50 modalBtn">5</div>
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- 上週 -->
+                        <div>
+                            <!-- 尚無任何記錄 -->
+                            <p class="col-12 centerCenter w3-round-large py-2 text-light"
+                                style="background-color: #1e6cd8;">
+                                上週-尚無任何記錄</p>
+                            <!-- 資訊 -->
+                            <div class="pt-3 Announcement">
+                                <ul class="FAQ-btn row-cols-2 flex-wrap">
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
+                                    </li>
+                                    <li class="col-12 pr-0 d-flex justify-content-between">
+                                        <span class="date lp1 text-white-50" style="font-size: 0.75em;">
+                                            <script>
+                                                var x = new Date().toLocaleString();
+                                                $(".date").text(x);
+                                            </script>
+                                        </span>
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
+                                                style="margin-top: -2.5%;"></i></span>
+                                    </li>
+                                </ul>
+                                <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
+                                    style="display: none;background:#103971;">
+                                    <li class="lp1 col-12">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
+                                    </li>
+                                    <li class="col-12">
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 頁碼 -->
+                            <div class="text-center pt-3">
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                </div>
+                                <div class="btn text-white-50 modalBtn">1</div>
+                                <div class="btn text-white-50 modalBtn">2</div>
+                                <div class="btn text-white-50 modalBtn">3</div>
+                                <div class="btn text-white-50 modalBtn">4</div>
+                                <div class="btn text-white-50 modalBtn">5</div>
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </ul>
+                </li>
+                <!-- 優惠 -->
+                <li>
+                    <div class="row px-3">
+                        <p class="col-12 centerCenter">優惠</p>
+                        <!-- 開始日期 -->
+                        <form class="col-12 col-sm-6 centerCenter py-2" action="uk-margin" method="post">
+                            <label>
+                                <span class="lp1 text-light">開始日期</span>
+                            </label>
+                            <input class="px-1 text-light bg-secondary w3-round-medium border border-dark"
+                                type="datetime-local" name="" id="">
+                        </form>
+                        <!-- 結束日期 -->
+                        <form class="col-12 col-sm-6 centerCenter py-2" action="uk-margin" method="post">
+                            <label>
+                                <span class="lp1 text-light">結束日期</span>
+                            </label>
+                            <input class="px-1 text-light bg-secondary w3-round-medium border border-dark"
+                                type="datetime-local" name="" id="">
+                        </form>
+                    </div>
+                    <!-- 搜尋 -->
+                    <div class="col-12 pb-2 pt-4">
+                        <button class="btn lp1 uk-modal-close modalBtn-active d-flex centerCenter w-100"
+                            type="button">搜尋</button>
+                    </div>
+
+                    <!--  -->
+                    <ul class="row mx-3 mt-3 modalBtn-e" style="background-color: #103971;" uk-switcher>
+                        <div class="btn col modalSBtn p-0 modalSBtn-active">
+                            <p class=" text-center  pt-1 pb-2">昨日</p>
+                        </div>
+                        <div class="btn col modalSBtn p-0">
+                            <p class=" text-center  pt-1 pb-2">今日</p>
+                        </div>
+                        <div class="btn col modalSBtn p-0">
+                            <p class=" text-center  pt-1 pb-2">本週</p>
+                        </div>
+                        <div class="btn col modalSBtn p-0">
+                            <p class=" text-center  pt-1 pb-2">上週</p>
+                        </div>
+                    </ul>
+
+                    <ul class="uk-switcher pt-3 px-3">
+                        <!-- 昨日 -->
+                        <div>
+                            <!-- 尚無任何記錄 -->
+                            <p class="col-12 centerCenter w3-round-large py-2 text-light"
+                                style="background-color: #1e6cd8;">
+                                昨日-尚無任何記錄</p>
+                            <!-- 資訊 -->
+                            <div class="pt-3 Announcement">
+                                <ul class="FAQ-btn row-cols-2 flex-wrap">
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
+                                    </li>
+                                    <li class="col-12 pr-0 d-flex justify-content-between">
+                                        <span class="date lp1 text-white-50" style="font-size: 0.75em;">
+                                            <script>
+                                                var x = new Date().toLocaleString();
+                                                $(".date").text(x);
+                                            </script>
+                                        </span>
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
+                                                style="margin-top: -2.5%;"></i></span>
+                                    </li>
+                                </ul>
+                                <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
+                                    style="display: none;background:#103971;">
+                                    <li class="lp1 col-12">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
+                                    </li>
+                                    <li class="col-12">
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 頁碼 -->
+                            <div class="text-center pt-3">
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                </div>
+                                <div class="btn text-white-50 modalBtn">1</div>
+                                <div class="btn text-white-50 modalBtn">2</div>
+                                <div class="btn text-white-50 modalBtn">3</div>
+                                <div class="btn text-white-50 modalBtn">4</div>
+                                <div class="btn text-white-50 modalBtn">5</div>
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- 今日 -->
+                        <div>
+                            <!-- 尚無任何記錄 -->
+                            <p class="col-12 centerCenter w3-round-large py-2 text-light"
+                                style="background-color: #1e6cd8;">
+                                今日-尚無任何記錄</p>
+                            <!-- 資訊 -->
+                            <div class="pt-3 Announcement">
+                                <ul class="FAQ-btn row-cols-2 flex-wrap">
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
+                                    </li>
+                                    <li class="col-12 pr-0 d-flex justify-content-between">
+                                        <span class="date lp1 text-white-50" style="font-size: 0.75em;">
+                                            <script>
+                                                var x = new Date().toLocaleString();
+                                                $(".date").text(x);
+                                            </script>
+                                        </span>
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
+                                                style="margin-top: -2.5%;"></i></span>
+                                    </li>
+                                </ul>
+                                <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
+                                    style="display: none;background:#103971;">
+                                    <li class="lp1 col-12">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
+                                    </li>
+                                    <li class="col-12">
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 頁碼 -->
+                            <div class="text-center pt-3">
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                </div>
+                                <div class="btn text-white-50 modalBtn">1</div>
+                                <div class="btn text-white-50 modalBtn">2</div>
+                                <div class="btn text-white-50 modalBtn">3</div>
+                                <div class="btn text-white-50 modalBtn">4</div>
+                                <div class="btn text-white-50 modalBtn">5</div>
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- 本週 -->
+                        <div>
+                            <!-- 尚無任何記錄 -->
+                            <p class="col-12 centerCenter w3-round-large py-2 text-light"
+                                style="background-color: #1e6cd8;">
+                                本週-尚無任何記錄</p>
+                            <!-- 資訊 -->
+                            <div class="pt-3 Announcement">
+                                <ul class="FAQ-btn row-cols-2 flex-wrap">
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
+                                    </li>
+                                    <li class="col-12 pr-0 d-flex justify-content-between">
+                                        <span class="date lp1 text-white-50" style="font-size: 0.75em;">
+                                            <script>
+                                                var x = new Date().toLocaleString();
+                                                $(".date").text(x);
+                                            </script>
+                                        </span>
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
+                                                style="margin-top: -2.5%;"></i></span>
+                                    </li>
+                                </ul>
+                                <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
+                                    style="display: none;background:#103971;">
+                                    <li class="lp1 col-12">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
+                                    </li>
+                                    <li class="col-12">
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 頁碼 -->
+                            <div class="text-center pt-3">
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                </div>
+                                <div class="btn text-white-50 modalBtn">1</div>
+                                <div class="btn text-white-50 modalBtn">2</div>
+                                <div class="btn text-white-50 modalBtn">3</div>
+                                <div class="btn text-white-50 modalBtn">4</div>
+                                <div class="btn text-white-50 modalBtn">5</div>
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- 上週 -->
+                        <div>
+                            <!-- 尚無任何記錄 -->
+                            <p class="col-12 centerCenter w3-round-large py-2 text-light"
+                                style="background-color: #1e6cd8;">
+                                上週-尚無任何記錄</p>
+                            <!-- 資訊 -->
+                            <div class="pt-3 Announcement">
+                                <ul class="FAQ-btn row-cols-2 flex-wrap">
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
+                                    </li>
+                                    <li class="col-12 pr-0 d-flex justify-content-between">
+                                        <span class="date lp1 text-white-50" style="font-size: 0.75em;">
+                                            <script>
+                                                var x = new Date().toLocaleString();
+                                                $(".date").text(x);
+                                            </script>
+                                        </span>
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
+                                                style="margin-top: -2.5%;"></i></span>
+                                    </li>
+                                </ul>
+                                <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
+                                    style="display: none;background:#103971;">
+                                    <li class="lp1 col-12">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
+                                    </li>
+                                    <li class="col-12">
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 頁碼 -->
+                            <div class="text-center pt-3">
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                </div>
+                                <div class="btn text-white-50 modalBtn">1</div>
+                                <div class="btn text-white-50 modalBtn">2</div>
+                                <div class="btn text-white-50 modalBtn">3</div>
+                                <div class="btn text-white-50 modalBtn">4</div>
+                                <div class="btn text-white-50 modalBtn">5</div>
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </ul>
+                </li>
+                <!-- 下注 -->
+                <li>
+                    <div class="row px-3">
+                        <p class="col-12 centerCenter">下注</p>
+                        <!-- 開始日期 -->
+                        <form class="col-12 col-sm-6 centerCenter py-2" action="uk-margin" method="post">
+                            <label>
+                                <span class="lp1 text-light">開始日期</span>
+                            </label>
+                            <input class="px-1 text-light bg-secondary w3-round-medium border border-dark"
+                                type="datetime-local" name="" id="">
+                        </form>
+                        <!-- 結束日期 -->
+                        <form class="col-12 col-sm-6 centerCenter py-2" action="uk-margin" method="post">
+                            <label>
+                                <span class="lp1 text-light">結束日期</span>
+                            </label>
+                            <input class="px-1 text-light bg-secondary w3-round-medium border border-dark"
+                                type="datetime-local" name="" id="">
+                        </form>
+                    </div>
+                    <!-- 搜尋 -->
+                    <div class="col-12 pb-2 pt-4">
+                        <button class="btn lp1 uk-modal-close modalBtn-active d-flex centerCenter w-100"
+                            type="button">搜尋</button>
+                    </div>
+
+                    <!--  -->
+                    <ul class="row mx-3 mt-3 modalBtn-e" style="background-color: #103971;" uk-switcher>
+                        <div class="btn col modalSBtn p-0 modalSBtn-active">
+                            <p class=" text-center  pt-1 pb-2">昨日</p>
+                        </div>
+                        <div class="btn col modalSBtn p-0">
+                            <p class=" text-center  pt-1 pb-2">今日</p>
+                        </div>
+                        <div class="btn col modalSBtn p-0">
+                            <p class=" text-center  pt-1 pb-2">本週</p>
+                        </div>
+                        <div class="btn col modalSBtn p-0">
+                            <p class=" text-center  pt-1 pb-2">上週</p>
+                        </div>
+                    </ul>
+
+                    <ul class="uk-switcher pt-3 px-3">
+                        <!-- 昨日 -->
+                        <div>
+                            <!-- 尚無任何記錄 -->
+                            <p class="col-12 centerCenter w3-round-large py-2 text-light"
+                                style="background-color: #1e6cd8;">
+                                昨日-尚無任何記錄</p>
+                            <!-- 資訊 -->
+                            <div class="pt-3 Announcement">
+                                <ul class="FAQ-btn row-cols-2 flex-wrap">
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
+                                    </li>
+                                    <li class="col-12 pr-0 d-flex justify-content-between">
+                                        <span class="date lp1 text-white-50" style="font-size: 0.75em;">
+                                            <script>
+                                                var x = new Date().toLocaleString();
+                                                $(".date").text(x);
+                                            </script>
+                                        </span>
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
+                                                style="margin-top: -2.5%;"></i></span>
+                                    </li>
+                                </ul>
+                                <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
+                                    style="display: none;background:#103971;">
+                                    <li class="lp1 col-12">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
+                                    </li>
+                                    <li class="col-12">
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 頁碼 -->
+                            <div class="text-center pt-3">
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                </div>
+                                <div class="btn text-white-50 modalBtn">1</div>
+                                <div class="btn text-white-50 modalBtn">2</div>
+                                <div class="btn text-white-50 modalBtn">3</div>
+                                <div class="btn text-white-50 modalBtn">4</div>
+                                <div class="btn text-white-50 modalBtn">5</div>
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- 今日 -->
+                        <div>
+                            <!-- 尚無任何記錄 -->
+                            <p class="col-12 centerCenter w3-round-large py-2 text-light"
+                                style="background-color: #1e6cd8;">
+                                今日-尚無任何記錄</p>
+                            <!-- 資訊 -->
+                            <div class="pt-3 Announcement">
+                                <ul class="FAQ-btn row-cols-2 flex-wrap">
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
+                                    </li>
+                                    <li class="col-12 pr-0 d-flex justify-content-between">
+                                        <span class="date lp1 text-white-50" style="font-size: 0.75em;">
+                                            <script>
+                                                var x = new Date().toLocaleString();
+                                                $(".date").text(x);
+                                            </script>
+                                        </span>
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
+                                                style="margin-top: -2.5%;"></i></span>
+                                    </li>
+                                </ul>
+                                <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
+                                    style="display: none;background:#103971;">
+                                    <li class="lp1 col-12">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
+                                    </li>
+                                    <li class="col-12">
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 頁碼 -->
+                            <div class="text-center pt-3">
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                </div>
+                                <div class="btn text-white-50 modalBtn">1</div>
+                                <div class="btn text-white-50 modalBtn">2</div>
+                                <div class="btn text-white-50 modalBtn">3</div>
+                                <div class="btn text-white-50 modalBtn">4</div>
+                                <div class="btn text-white-50 modalBtn">5</div>
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- 本週 -->
+                        <div>
+                            <!-- 尚無任何記錄 -->
+                            <p class="col-12 centerCenter w3-round-large py-2 text-light"
+                                style="background-color: #1e6cd8;">
+                                本週-尚無任何記錄</p>
+                            <!-- 資訊 -->
+                            <div class="pt-3 Announcement">
+                                <ul class="FAQ-btn row-cols-2 flex-wrap">
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
+                                    </li>
+                                    <li class="col-12 pr-0 d-flex justify-content-between">
+                                        <span class="date lp1 text-white-50" style="font-size: 0.75em;">
+                                            <script>
+                                                var x = new Date().toLocaleString();
+                                                $(".date").text(x);
+                                            </script>
+                                        </span>
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
+                                                style="margin-top: -2.5%;"></i></span>
+                                    </li>
+                                </ul>
+                                <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
+                                    style="display: none;background:#103971;">
+                                    <li class="lp1 col-12">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
+                                    </li>
+                                    <li class="col-12">
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 頁碼 -->
+                            <div class="text-center pt-3">
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                </div>
+                                <div class="btn text-white-50 modalBtn">1</div>
+                                <div class="btn text-white-50 modalBtn">2</div>
+                                <div class="btn text-white-50 modalBtn">3</div>
+                                <div class="btn text-white-50 modalBtn">4</div>
+                                <div class="btn text-white-50 modalBtn">5</div>
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- 上週 -->
+                        <div>
+                            <!-- 尚無任何記錄 -->
+                            <p class="col-12 centerCenter w3-round-large py-2 text-light"
+                                style="background-color: #1e6cd8;">
+                                上週-尚無任何記錄</p>
+                            <!-- 資訊 -->
+                            <div class="pt-3 Announcement">
+                                <ul class="FAQ-btn row-cols-2 flex-wrap">
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
+                                    </li>
+                                    <li class="lp1 col-6 pr-0">
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
+                                    </li>
+                                    <li class="col-12 pr-0 d-flex justify-content-between">
+                                        <span class="date lp1 text-white-50" style="font-size: 0.75em;">
+                                            <script>
+                                                var x = new Date().toLocaleString();
+                                                $(".date").text(x);
+                                            </script>
+                                        </span>
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
+                                                style="margin-top: -2.5%;"></i></span>
+                                    </li>
+                                </ul>
+                                <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
+                                    style="display: none;background:#103971;">
+                                    <li class="lp1 col-12">
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
+                                    </li>
+                                    <li class="col-12">
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 頁碼 -->
+                            <div class="text-center pt-3">
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                </div>
+                                <div class="btn text-white-50 modalBtn">1</div>
+                                <div class="btn text-white-50 modalBtn">2</div>
+                                <div class="btn text-white-50 modalBtn">3</div>
+                                <div class="btn text-white-50 modalBtn">4</div>
+                                <div class="btn text-white-50 modalBtn">5</div>
+                                <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 自創 -->
+    <script src="../js/indexLogin.js"></script>
+    <!-- toggle -->
+    <script>
+        $(document).ready(
+            function () {
+                $('.Announcement ul').click(
+                    function () {
+                        $(this).next().toggle();
+                    }
+                )
+            }
+        )
+    </script>
+
+    <script>indexLoginFooter();</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

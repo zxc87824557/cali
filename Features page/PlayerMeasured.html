@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en" style="font-family: 'Microsoft YaHei', sans-serif;">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- IE兼容 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- w3 -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- UK CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/css/uikit.min.css" />
+
+    <!-- UK JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script>
+
+    <!-- JQ -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="../js/Addhtml.js"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <title>玩家實測</title>
+    <style>
+        /* 控制 btn ios 位置 */
+        .btnI {
+            transform: translate(-50%, 100%);
+        }
+
+        .active {
+            border-color: brown !important;
+        }
+
+        .border-app {
+            border: 1px solid #6c757d;
+        }
+
+        .textH1 {
+            color: #f1f383;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <script>PageHeader();</script>
+
+    <!-- 通用  ------------------------------------------------------------------------>
+    <a href="../page/indexLogin.html"></a>
+    <!-- MD history.back ------------------------------------------------------------------------>
+    <div class="pt-1 d-md-none BlogGameBg1">
+        <nav aria-label="breadcrumb">
+            <ul class="d-flex py-0 py-sm-1">
+                <button class="btn py-0" type="button" onclick="history.back()" value="回到上一頁">
+                    <i class="fas fa-angle-left text-light fa-lg"></i>
+                </button>
+                <li class="breadcrumb-item"><a href="../index.html" class="text-light">首頁</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <span class="text-light pl-2" id="copyTitle"></span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script>
+        $(document).ready(function () {
+            let title = $('title').text();
+            $('#copyTitle').html(title);
+        });
+    </script>
+
+
+    <div class=" text-light container-fluid p-0 m-0 bgc-flex-v d-none d-md-block"
+        style="background:url(../卡-img/桌機index_img/bg1.png);" id="axc">
+        <div class="container pb-3">
+            <!-- PC ------------------------------------------------------------------------>
+            <!--  -->
+            <div class="row pt-3 d-none d-md-block">
+                <img src="../卡-img/桌機index_img/title3.png" alt="">
+            </div>
+
+            <!--  -->
+            <div class="row px-3 py-1 py-md-3 py-lg-4 m-0">
+                <div class="col-12 bg-theme my-3 mx-0 py-3">
+                    <div class="row">
+                        <!--  -->
+                        <div class="col-8 my-auto">
+                            <div class="row">
+                                <div class="col-5 my-auto">
+                                    <img src="../卡-img/桌機index_img/評論.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-7 my-auto">
+                                    <p class="textH1 h5">卡利娛樂城</p>
+                                    <p class="text-justify fsz-08">卡利玩家實際遊玩回饋，VIP3以上會員即可評價，認證機制保證真實性
+                                        各位會員提出對卡利娛樂城的意見，卡利娛樂城更加進步，打造出更讓
+                                        各為喜愛的線上博弈平台。</p>
+                                    <div class="row py-3">
+                                        <!--  -->
+                                        <div class="col-12 col-xl-4 my-1 mx-lg-0 p-0">
+                                            <img class="img-fluid btn" src="../卡-img/桌機各分頁img/玩家實測/icon1.png" alt="">
+                                            <span class="text-secondary fsz-08">4.8評測</span>
+                                        </div>
+                                        <!--  -->
+                                        <div class="col-12 col-xl-4 my-1 mx-lg-0 p-0">
+                                            <img class="img-fluid btn" src="../卡-img/桌機各分頁img/玩家實測/icon2.png" alt="">
+                                            <span class="text-secondary fsz-08">20,008玩家</span>
+                                        </div>
+                                        <!--  -->
+                                        <div class="col-12 col-xl-4 my-1 mx-lg-0 p-0">
+                                            <img class="img-fluid btn" src="../卡-img/桌機各分頁img/玩家實測/icon3.png" alt="">
+                                            <span class="text-secondary fsz-08">168評論</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="flex-grow-1 my-auto slotBg border w3-border-purple w3-round-large p-3 mr-3">
+                            <!--  -->
+                            <p class="centerCenter" style="font-size: 30px;">4.8</p>
+                            <!--  -->
+                            <div class="col-12 centerCenter">
+                                <div class="row centerCenter">
+                                    <img src="../卡-img/桌機index_img/star1.svg" alt="" style="width: 20px;">
+                                    <img src="../卡-img/桌機index_img/star1.svg" alt="" style="width: 20px;">
+                                    <img src="../卡-img/桌機index_img/star1.svg" alt="" style="width: 20px;">
+                                    <img src="../卡-img/桌機index_img/star1.svg" alt="" style="width: 20px;">
+                                    <img src="../卡-img/桌機index_img/star2.svg" alt="" style="width: 20px;">
+                                </div>
+                            </div>
+                            <p class="centerCenter">358則評論</p>
+                            <!--  -->
+                            <div class="col-12 pt-3">
+                                <div class="progress mb-2">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                        aria-valuemax="50" style="width: 95%"></div>
+                                </div>
+                                <div class="progress mb-2">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                        aria-valuemax="100" style="width: 80%"></div>
+                                </div>
+                                <div class="progress mb-2">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                        aria-valuemax="100" style="width: 15%"></div>
+                                </div>
+                                <div class="progress mb-2">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                        aria-valuemax="100" style="width: 5%"></div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                        aria-valuemax="100" style="width: 2%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 bg-theme">
+                    <!-- 1 -->
+                    <div class="row py-3 border-bottom border-secondary">
+                        <!--  -->
+                        <div class="col-4 centerCenter">
+                            <div class="row centerCenter">
+                                <div class="col-1 centerCenter">
+                                    <div class="user1"></div>
+                                </div>
+                                <div class="col-8">
+                                    <p class="p-0">VIP4 會員4141563</p>
+                                    <small class="">1則評論</small>
+                                    <small class="" style="color: rgb(149, 149, 149);">1天前</small>
+                                    <div class="d-flex " style="width: 24px;">
+                                        <img src="../卡-img/桌機index_img/star1.svg" alt="">
+                                        <img src="../卡-img/桌機index_img/star1.svg" alt="">
+                                        <img src="../卡-img/桌機index_img/star1.svg" alt="">
+                                        <img src="../卡-img/桌機index_img/star1.svg" alt="">
+                                        <img src="../卡-img/桌機index_img/star1.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="col-6 centerCenter">
+                            <p class="text-justify fsz-08">
+                                活動獎勵多，出金速度很快，另外之前遇到系統上的問題馬上問客服就即時得到幫助，很感謝客服人員的即時處理，讓我可以繼續開心的在這個娛樂成繼續玩，這是我目前玩到最棒的娛樂城了！
+                            </p>
+                        </div>
+                        <!--  -->
+                        <div class="col-2 centerCenter">
+                            <img class="img-fluid btn" src="../卡-img/桌機各分頁img/玩家實測/like1-1.png" alt="">
+                        </div>
+                    </div>
+                    <!-- 1 -->
+                    <div class="row py-3 border-bottom border-secondary">
+                        <!--  -->
+                        <div class="col-4 centerCenter">
+                            <div class="row centerCenter">
+                                <div class="col-1 centerCenter">
+                                    <div class="user1"></div>
+                                </div>
+                                <div class="col-8">
+                                    <p class="p-0">VIP4 會員4141563</p>
+                                    <small class="">1則評論</small>
+                                    <small class="" style="color: rgb(149, 149, 149);">1天前</small>
+                                    <div class="d-flex " style="width: 24px;">
+                                        <img src="../卡-img/桌機index_img/star1.svg" alt="">
+                                        <img src="../卡-img/桌機index_img/star1.svg" alt="">
+                                        <img src="../卡-img/桌機index_img/star1.svg" alt="">
+                                        <img src="../卡-img/桌機index_img/star1.svg" alt="">
+                                        <img src="../卡-img/桌機index_img/star1.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="col-6 centerCenter">
+                            <p class="text-justify fsz-08">
+                                活動獎勵多，出金速度很快，另外之前遇到系統上的問題馬上問客服就即時得到幫助，很感謝客服人員的即時處理，讓我可以繼續開心的在這個娛樂成繼續玩，這是我目前玩到最棒的娛樂城了！
+                            </p>
+                        </div>
+                        <!--  -->
+                        <div class="col-2 centerCenter">
+                            <img class="img-fluid btn" src="../卡-img/桌機各分頁img/玩家實測/like1.png" alt="">
+                        </div>
+                    </div>
+                    <!-- 1 -->
+                    <div class="row py-3 border-bottom border-secondary">
+                        <!--  -->
+                        <div class="col-4 centerCenter">
+                            <div class="row centerCenter">
+                                <div class="col-1 centerCenter">
+                                    <div class="user1"></div>
+                                </div>
+                                <div class="col-8">
+                                    <p class="p-0">VIP4 會員4141563</p>
+                                    <small class="">1則評論</small>
+                                    <small class="" style="color: rgb(149, 149, 149);">1天前</small>
+                                    <div class="d-flex " style="width: 24px;">
+                                        <img src="../卡-img/桌機index_img/star1.svg" alt="">
+                                        <img src="../卡-img/桌機index_img/star1.svg" alt="">
+                                        <img src="../卡-img/桌機index_img/star1.svg" alt="">
+                                        <img src="../卡-img/桌機index_img/star1.svg" alt="">
+                                        <img src="../卡-img/桌機index_img/star1.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="col-6 centerCenter">
+                            <p class="text-justify fsz-08">
+                                活動獎勵多，出金速度很快，另外之前遇到系統上的問題馬上問客服就即時得到幫助，很感謝客服人員的即時處理，讓我可以繼續開心的在這個娛樂成繼續玩，這是我目前玩到最棒的娛樂城了！
+                            </p>
+                        </div>
+                        <!--  -->
+                        <div class="col-2 centerCenter">
+                            <img class="img-fluid btn" src="../卡-img/桌機各分頁img/玩家實測/like1.png" alt="">
+                        </div>
+                    </div>
+                    <!-- 1 -->
+                    <div class="row py-3 border-bottom border-secondary">
+                        <!--  -->
+                        <div class="col-4 centerCenter">
+                            <div class="row centerCenter">
+                                <div class="col-1 centerCenter">
+                                    <div class="user1"></div>
+                                </div>
+                                <div class="col-8">
+                                    <p class="p-0">VIP4 會員4141563</p>
+                                    <small class="">1則評論</small>
+                                    <small class="" style="color: rgb(149, 149, 149);">1天前</small>
+                                    <div class="d-flex " style="width: 24px;">
+                                        <img src="../卡-img/桌機index_img/star1.svg" alt="">
+                                        <img src="../卡-img/桌機index_img/star1.svg" alt="">
+                                        <img src="../卡-img/桌機index_img/star1.svg" alt="">
+                                        <img src="../卡-img/桌機index_img/star1.svg" alt="">
+                                        <img src="../卡-img/桌機index_img/star1.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="col-6 centerCenter">
+                            <p class="text-justify fsz-08">
+                                活動獎勵多，出金速度很快，另外之前遇到系統上的問題馬上問客服就即時得到幫助，很感謝客服人員的即時處理，讓我可以繼續開心的在這個娛樂成繼續玩，這是我目前玩到最棒的娛樂城了！
+                            </p>
+                        </div>
+                        <!--  -->
+                        <div class="col-2 centerCenter">
+                            <img class="img-fluid btn" src="../卡-img/桌機各分頁img/玩家實測/like1.png" alt="">
+                        </div>
+                    </div>
+                    <!-- 1 -->
+                    <div class="row py-3 border-bottom border-secondary">
+                        <!--  -->
+                        <div class="col-4 centerCenter">
+                            <div class="row centerCenter">
+                                <div class="col-1 centerCenter">
+                                    <div class="user1"></div>
+                                </div>
+                                <div class="col-8">
+                                    <p class="p-0">VIP4 會員4141563</p>
+                                    <small class="">1則評論</small>
+                                    <small class="" style="color: rgb(149, 149, 149);">1天前</small>
+                                    <div class="d-flex " style="width: 24px;">
+                                        <img src="../卡-img/桌機index_img/star1.svg" alt="">
+                                        <img src="../卡-img/桌機index_img/star1.svg" alt="">
+                                        <img src="../卡-img/桌機index_img/star1.svg" alt="">
+                                        <img src="../卡-img/桌機index_img/star1.svg" alt="">
+                                        <img src="../卡-img/桌機index_img/star1.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="col-6 centerCenter">
+                            <p class="text-justify fsz-08">
+                                活動獎勵多，出金速度很快，另外之前遇到系統上的問題馬上問客服就即時得到幫助，很感謝客服人員的即時處理，讓我可以繼續開心的在這個娛樂成繼續玩，這是我目前玩到最棒的娛樂城了！
+                            </p>
+                        </div>
+                        <!--  -->
+                        <div class="col-2 centerCenter">
+                            <img class="img-fluid btn" src="../卡-img/桌機各分頁img/玩家實測/like1.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="textH1 btn col-3 my-3 w3-hover-text-white bg-theme centerCenter uk-border-pill">
+                    查看更多
+                </div>
+            </div>
+
+
+
+            <!-- PCFooter -->
+            <div class="d-none d-md-block pt-3">
+                <script>
+                    PCFooter();
+                </script>
+            </div>
+
+            <!-- H -->
+            <div class="d-md-none " style="min-height: 65px;"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <script>MDFooter();</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

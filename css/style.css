@@ -269,3 +269,11 @@ a .BlogGameTColor:hover {
     background-color: #ea9127;
     color: #fff;
 }
+
+.slotBg {
+    background: linear-gradient(90deg, #1e1549, #3d1f5e, #412e7d);
+}
+
+.bg-theme{
+    background:#1e1549;
+}
