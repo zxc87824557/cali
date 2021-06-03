@@ -4,7 +4,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    
+
     <!-- IE兼容 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport"
@@ -36,27 +36,99 @@
 
     <title>登入條 indexLogin</title>
     <style>
+        a.text-secondary:focus,
+        a.text-secondary:hover {
+            color: #fff !important;
+        }
 
+        .fsz-1 {
+            font-size: 1em !important;
+        }
     </style>
 </head>
 
 <body>
-    <div class="container-fluid d-none d-md-block p-0 bgc-header-color">
+    <div class="container-fluid d-none d-md-block p-0 bgc-loginbar-color">
         <div class="container">
             <div class="row py-2">
-                <div class="col-12 text-right">
-                    <!--  -->
-                    <a href="./MyPurse.html"
-                        class="btn rounded-lg px-4 py-1 fsz-08 text-123ts-color mx-1 w3-hover-text-pink w3-border-orange">我的錢包</a>
-                    <a href="../header page/2AppDownload.html"
-                        class="btn rounded-lg px-4 py-1 fsz-08 text-123ts-color mx-1 w3-hover-text-pink w3-border-orange">APP下載</a>
-                    <!-- user -->
-                    <span class="text-secondary w3-small">你好，玩家</span><span
-                        class="text-secondary w3-medium">#8868</span>
-                    <!-- 登出 -->
-                    <a href="../index.html"><input class="input-size ml-2 text-center"
-                            style="background-image: url(../img/桌機index_img/btn登入.png);color: #ffbe67;" type="submit"
-                            value="登出"></a>
+                <div class="col-6 centerCenter">
+                    <div class="list-inline-item pl-2">
+                        <img class="img-fluid" src="../卡-img/桌機各分頁img/indexLogin_登入條/1.png" alt="">
+                        <img class="img-fluid" src="../卡-img/桌機各分頁img/indexLogin_登入條/2.png" alt="">
+                        <img class="img-fluid" src="../卡-img/桌機各分頁img/indexLogin_登入條/2.png" alt="">
+                        <img class="img-fluid" src="../卡-img/桌機各分頁img/indexLogin_登入條/2.png" alt="">
+                        <img class="img-fluid" src="../卡-img/桌機各分頁img/indexLogin_登入條/2.png" alt="">
+                        <span class="pl-2">會員</span>
+                        <span>4141563</span>
+                        <img class="img-fluid pl-4" src="../卡-img/桌機各分頁img/indexLogin_登入條/money.png" alt="">
+                        <span>9,000.00</span>
+                        <button class="btn p-0 m-0">
+                            <img class="img-fluid pl-1" src="../卡-img/桌機各分頁img/indexLogin_登入條/4.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="col-6 centerCenter list-inline fsz-08">
+                    <!-- 1.我的錢包 -->
+                    <a href="./MyPurse.html" class="btn list-inline-item p-1 w3-hover-shadow">
+                        <li class="text-center"><img src="../卡-img/桌機各分頁img/indexLogin_登入條/bt1.png" alt="">
+                        </li>
+                        <p class="text-dark font-weight-bold">我的錢包</p>
+                    </a>
+                    <!-- 2.存取流程 -->
+                    <a href="../Features page/AccessFlow.html" class="btn list-inline-item p-1 w3-hover-shadow">
+                        <li class="text-center"><img src="../卡-img/桌機各分頁img/indexLogin_登入條/bt2.png" alt="">
+                        </li>
+                        <p class="text-dark font-weight-bold">存取流程</p>
+                    </a>
+                    <!-- 3.會員通知 -->
+                    <a href="#modal-example1" class="btn list-inline-item p-1 w3-hover-shadow" uk-toggle>
+                        <li class="text-center">
+                            <img src="../卡-img/桌機各分頁img/indexLogin_登入條/bt7.png" alt="">
+                        </li>
+                        <p class="text-dark font-weight-bold">會員通知</p>
+                    </a>
+
+                    <div id='modal-example1' uk-modal>
+                        <div class='uk-modal-dialog w3-round-large'>
+                            <div class='px-3 py-1 bgc-loginbar-color' style='border-radius: 8px 8px 0  0;'>
+                                <i class="far fa-bell"></i>
+                                <span class="pl-2">會員通知</span>
+                                <button class='uk-modal-close-default text-dark' type='button' uk-close></button>
+                            </div>
+                            <div class="text-secondary bg-theme px-5 pt-3 pb-5">
+                                <!--  -->
+                                <p class="text-center py-1">公告專區</p>
+                                <!--  -->
+                                <ul uk-accordion="" class="uk-accordion">
+                                    <!-- 1 -->
+                                    <li class="uk-open">
+                                        <a class="uk-accordion-title fsz-1 text-secondary" href="#">【標題】存款公告</a>
+                                        <div class="uk-accordion-content">
+                                            <p class="fsz-08 text-secondary">1. 一般存款沒有享受任何優惠的情況下，達到1倍流水即可出款
+                                                <br>
+                                                2. 一週三次，一天最多一次免手續費，每日超過免費次數，收取1%、2%手續費…最高5%
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <!-- 2 -->
+                                    <li>
+                                        <a class="uk-accordion-title fsz-1 text-secondary" href="#">【標題】存款公告</a>
+                                        <div class="uk-accordion-content" hidden="">
+                                            <p class="fsz-08 text-secondary">
+                                                1. 一般存款沒有享受任何優惠的情況下，達到1倍流水即可出款
+                                                <br>
+                                                2. 一週三次，一天最多一次免手續費，每日超過免費次數，收取1%、2%手續費…最高5%
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5.btn -->
+                    <a href="../index.html" class="btn p-0 m-0 ">
+                        <img src="../卡-img/桌機各分頁img/indexLogin_登入條/登出.png" alt="" class="img-fluid">
+                    </a>
                 </div>
             </div>
         </div>
