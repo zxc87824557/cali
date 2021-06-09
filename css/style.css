@@ -148,6 +148,9 @@ header, footer, div, nav, article, h2, h3, h4, h5, h6, hr, p, form, label, input
 .fsz-06 {
     font-size: 0.6em !important;
 }
+.fsz-13 {
+    font-size: 1.3em !important;
+}
 
 .textSize{
     font-size: 100px;
@@ -284,4 +287,18 @@ a .BlogGameTColor:hover {
 
 .text-theme{
     color: #f1cd6d;
+}
+
+.row{
+    margin: auto;
+}
+
+.textTitle{
+    color: #fff;
+}
+
+.bg-input{
+    background:#1e1549;
+    border: 1px solid #999;
+    color: #999;
 }

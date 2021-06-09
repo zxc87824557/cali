@@ -16,79 +16,99 @@
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
+    <!-- w3 -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- UK CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/css/uikit.min.css" />
+
+    <!-- UK JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script>
+
     <!-- JQ -->
-    <!-- <script src="./jquery/jquery-1.10.js"></script> -->
-    <script src="../jquery/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="../js/Addhtml.js"></script>
 
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/style.css">
 
     <title>CustomerService_客服中心</title>
     <style>
-@media(min-width: 768px) {
-    .changeBGE {
-        background: url(../img/Featurespage/CustomerService/Sevive.png) !important;
-        background-repeat: no-repeat !important;
-        background-position: top center !important;
-    }
-}
+
     </style>
 </head>
 
 <body>
     <script>PageHeader();</script>
     <!-- ------------------------------------電腦版------------------------------------ -->
-    <div class="container-fluid p-0 m-0" id="bgc-color">
-        <div class="changeBGE" id="bgc-flex-v">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 pt-5 pb-3">
-                        <div class="card" style="background-color: rgba(0, 0, 0, 0.5);">
-                            <a href="https://line.me/R/ti/p/%40999xc" class="card-body" target="_blank">
-                                <img src="../img/Featurespage/CustomerService/icon_bank_line.svg" alt="" style="width: 3.5em;">
-                                <b class="pl-3 text-light pt-3">@999xc</b>
-                                <b class="float-right text-white-50 pt-3" style="letter-spacing: .2em;">聯繫</b>
-                            </a>
+    <div class="container-fluid px-0 py-0 m-0  bg-theme">
+        <div class="container">
+            <div class="row py-5 centerCenter">
+                <h2 class="col-12 h1 text-light bgc-header-color">意見反饋</h2>
+                <div class="w-75">
+                    <!-- table -->
+                    <table class="uk-table text-light">
+                        <thead>
+                            <tr>
+                                <th class="text-light"></th>
+                                <th class="text-light">極差</th>
+                                <th class="text-light">很差</th>
+                                <th class="text-light">普通</th>
+                                <th class="text-light">很好</th>
+                                <th class="text-light">極好</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>客服服務</td>
+                                <td><input type="radio" name="1" id=""></td>
+                                <td><input type="radio" name="1" id=""></td>
+                                <td><input type="radio" name="1" id=""></td>
+                                <td><input type="radio" name="1" id=""></td>
+                                <td><input type="radio" name="1" id=""></td>
+                            </tr>
+                            <tr>
+                                <td>提款速度</td>
+                                <td><input type="radio" name="2" id=""></td>
+                                <td><input type="radio" name="2" id=""></td>
+                                <td><input type="radio" name="2" id=""></td>
+                                <td><input type="radio" name="2" id=""></td>
+                                <td><input type="radio" name="2" id=""></td>
+                            </tr>
+                            <tr>
+                                <td>操作界面</td>
+                                <td><input type="radio" name="3" id=""></td>
+                                <td><input type="radio" name="3" id=""></td>
+                                <td><input type="radio" name="3" id=""></td>
+                                <td><input type="radio" name="3" id=""></td>
+                                <td><input type="radio" name="3" id=""></td>
+                            </tr>
+                            <tr>
+                                <td>網路連結速度</td>
+                                <td><input type="radio" name="4" id=""></td>
+                                <td><input type="radio" name="4" id=""></td>
+                                <td><input type="radio" name="4" id=""></td>
+                                <td><input type="radio" name="4" id=""></td>
+                                <td><input type="radio" name="4" id=""></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="row pb-3">
+                        <div class="col-12 text-light">意見</div>
+                        <div class="col-12 pt-3">
+                            <textarea name="" id="" cols="89" rows="5"></textarea>
                         </div>
                     </div>
-                    <div class="col-12 py-3">
-                        <div class="card" style="background-color: rgba(0, 0, 0, 0.5);">
-                            <a href="javascript:;" class="card-body">
-                                <img src="../img/Featurespage/CustomerService/WECHAT.png" alt="" style="width: 3.5em;">
-                                <b class="pl-3 text-light pt-3">love999xc</b>
-                                <b class="float-right text-white-50 pt-3" style="letter-spacing: .2em;">聯繫</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-12 py-3">
-                        <div class="card" style="background-color: rgba(0, 0, 0, 0.5);">
-                            <a href="javascript:;" class="card-body">
-                                <img src="../img/Featurespage/CustomerService/Sevive.png" alt="" style="width: 3.5em;">
-                                <b class="pl-3 text-light pt-3">在線客服</b>
-                                <b class="float-right text-white-50 pt-3" style="letter-spacing: .2em;">聯繫</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-12 py-3">
-                        <div class="card" style="background-color: rgba(0, 0, 0, 0.5);">
-                            <a href="javascript:;" class="card-body">
-                                <img src="../img/Featurespage/CustomerService/icon_Serv_online.svg" alt="" style="width: 3.5em;">
-                                <b class="pl-3 text-light pt-3">在線客服</b>
-                                <b class="float-right text-white-50 pt-3" style="letter-spacing: .2em;">聯繫</b>
-                            </a>
-                        </div>
-                    </div>
+                    <p class="col-12 centerCenter border-0 w3-round-large">
+                        <button class="uk-button bg-i-gold w-25 text-black" type="button">提交</button>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
     <!-- ------------------------------------手機版------------------------------------ -->
-    <script>PCFooter();</script>
-    <script>MDFooter();</script>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>

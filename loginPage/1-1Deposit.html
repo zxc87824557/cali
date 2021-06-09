@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en" style="font-family: 'Microsoft YaHei', sans-serif;">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- IE兼容 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- w3 -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- UK CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/css/uikit.min.css" />
+
+    <!-- UK JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script>
+
+    <!-- JQ -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="../js/Addhtml.js"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <title>存款專區</title>
+    <style>
+        .max-h-100 {
+            height: 690px;
+        }
+
+        .bs {
+            border-radius: 10px;
+            border: 1px solid #fd788e;
+            color: #fd788e;
+        }
+
+        .uk-subnav-pill>.uk-active>a {
+            background-color: #412e7d !important;
+            color: wheat;
+            border: 1px solid #fd788e;
+        }
+
+        .uk-subnav-pill>*>a:focus,
+        .uk-subnav-pill>*>a:hover {
+            background-color: #412e7d;
+            color: wheat;
+            border: 1px solid #fd788e;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <script>indexMDLoginHeader();</script>
+
+    <!-- 通用  ------------------------------------------------------------------------>
+
+    <div class="container-fluid p-0 m-0 bgc-flex-v max-h-100"
+        style="background-image: url(../卡-img/桌機index_img/bg1.png);">
+        <div class="container pt-0 px-0">
+            <div class="row bg-theme py-3">
+                <div class="col-12 pb-3">
+                    <div class="p-3">
+                        <!-- 存款 -->
+                        <li class="textTitle">
+                            <ul class="uk-subnav uk-subnav-pill row px-3" uk-switcher>
+                                <li class="col-6 my-1"><a href="#" class="centerCenter w3-round-medium">線上轉帳</a></li>
+                                <li class="col-6 my-1"><a href="#" class="centerCenter w3-round-medium">線上刷卡</a></li>
+                                <li class="col-6 my-1"><a href="#" class="centerCenter w3-round-medium">約定收款專區</a></li>
+                                <li class="col-6 my-1"><a href="#" class="centerCenter w3-round-medium">超商</a></li>
+                            </ul>
+
+                            <ul class="uk-switcher uk-margin">
+                                <!-- 線上轉帳 -->
+                                <li>
+                                    <!-- 通道 -->
+                                    <form action="uk-margin" class="col-12 py-2" method="post">
+                                        <label>
+                                            <p class="">通道</p>
+                                        </label>
+                                        <input class="py-1 btn bg-input w-100 text-left" type="text">
+                                    </form>
+                                    <!-- 金額 -->
+                                    <form action="uk-margin" class="col-12 py-2" method="post">
+                                        <label>
+                                            <span class="">金額</span>
+                                        </label>
+                                        <input class="py-1 btn bg-input w-100 text-left" type="text">
+                                    </form>
+                                    <p class="text-right text-123ts-color w3-small">( 最低 100 最高
+                                        50,000 )</p>
+                                    <!-- 優惠 -->
+                                    <form action="uk-margin" class="col-12 py-2" method="post">
+                                        <label class="" for="form-horizontal-select">
+                                            <p class="">優惠</p>
+                                        </label>
+                                        <div class="uk-form-controls">
+                                            <select class="uk-select h-75 bg-input" id="form-horizontal-select">
+                                                <option>請選擇</option>
+                                                <option>優惠 01</option>
+                                                <option>優惠 02</option>
+                                                <option>優惠 03</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                    <div class="p-3">
+                                        <button class="uk-button bgc-loginbar-color text-black centerCenter col-12 "
+                                            type="button" style="border-radius: 5px;">確認送出</button>
+                                    </div>
+                                    <p class="col-12 centerCenter fsz-08">
+                                        ★存款請使用本人銀行操作，若非本人而影響後續出款權益須自行承擔</p>
+                                </li>
+                                <!-- 線上刷卡 -->
+                                <li>
+                                    <!-- 通道 -->
+                                    <form action="uk-margin" class="col-12 py-2" method="post">
+                                        <label>
+                                            <p class="">通道</p>
+                                        </label>
+                                        <input class="py-1 btn bg-input w-100 text-left" type="text">
+                                    </form>
+                                    <!-- 金額 -->
+                                    <form action="uk-margin" class="col-12 py-2" method="post">
+                                        <label>
+                                            <span class="">金額</span>
+                                        </label>
+                                        <input class="py-1 btn bg-input w-100 text-left" type="text">
+                                    </form>
+                                    <p class="text-right text-123ts-color w3-small">刷卡需收8%手續費</p>
+                                    <!-- 優惠 -->
+                                    <form action="uk-margin" class="col-12 py-2" method="post">
+                                        <label class="" for="form-horizontal-select">
+                                            <p class="">優惠</p>
+                                        </label>
+                                        <div class="uk-form-controls">
+                                            <select class="uk-select h-75 bg-input" id="form-horizontal-select">
+                                                <option>請選擇</option>
+                                                <option>優惠 01</option>
+                                                <option>優惠 02</option>
+                                                <option>優惠 03</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                    <div class="p-3">
+                                        <button class="uk-button bgc-loginbar-color centerCenter col-12 text-black"
+                                            type="button" style="border-radius: 5px;">確認送出</button>
+                                    </div>
+                                    <p class="col-12 centerCenter fsz-08">
+                                        ★存款請使用本人銀行操作，若非本人而影響後續出款權益須自行承擔</p>
+                                </li>
+                                <!-- 約定收款專區 -->
+                                <li>
+                                    <!-- 銀行帳戶 -->
+                                    <form action="uk-margin" class="col-12 py-2" method="post">
+                                        <label>
+                                            <p class="">銀行帳戶</p>
+                                        </label>
+                                        <input class="py-1 btn bg-input w-100 text-left" type="text">
+                                    </form>
+                                    <!-- 銀行戶口名字 -->
+                                    <form action="uk-margin" class="col-12 py-2" method="post">
+                                        <label>
+                                            <p class="">銀行戶口名字</p>
+                                        </label>
+                                        <input class="py-1 btn bg-input w-100 text-left" type="text">
+                                    </form>
+                                    <!-- 銀行戶口號碼 -->
+                                    <form action="uk-margin" class="col-12 py-2" method="post">
+                                        <label>
+                                            <p class="">銀行戶口號碼</p>
+                                        </label>
+                                        <input class="py-1 btn bg-input w-100 text-left" type="text">
+                                    </form>
+                                    <!-- 金額 -->
+                                    <form action="uk-margin" class="col-12 py-2" method="post">
+                                        <label>
+                                            <span class="">金額</span>
+                                        </label>
+                                        <input class="py-1 btn bg-input w-100 text-left" type="text">
+                                    </form>
+                                    <p class="text-right text-123ts-color w3-small">最低 100</p>
+                                    <!-- 備註 -->
+                                    <form action="uk-margin" class="col-12 py-2" method="post">
+                                        <label>
+                                            <p class="">備註</p>
+                                        </label>
+                                        <input class="py-1 btn bg-input w-100 text-left" type="text"
+                                            placeholder="請填寫匯款帳戶後五碼">
+                                    </form>
+                                    <!-- 優惠 -->
+                                    <form action="uk-margin" class="col-12 py-2" method="post">
+                                        <label class="" for="form-horizontal-select">
+                                            <p class="">優惠</p>
+                                        </label>
+                                        <div class="uk-form-controls">
+                                            <select class="uk-select h-75 bg-input" id="form-horizontal-select">
+                                                <option>請選擇</option>
+                                                <option>優惠 01</option>
+                                                <option>優惠 02</option>
+                                                <option>優惠 03</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                    <div class="p-3">
+                                        <button class="uk-button bgc-loginbar-color centerCenter col-12 text-black"
+                                            type="button" style="border-radius: 5px;">確認送出</button>
+                                    </div>
+                                    <p class="col-12 centerCenter fsz-08">
+                                        ★存款請使用本人銀行操作，若非本人而影響後續出款權益須自行承擔</p>
+                                </li>
+                                <!-- 超商繳費 -->
+                                <li>
+                                    <!-- 通道 -->
+                                    <form action="uk-margin" class="col-12 py-2" method="post">
+                                        <label>
+                                            <p class="">通道</p>
+                                        </label>
+                                        <input class="py-1 btn bg-input w-100 text-left" type="text">
+                                    </form>
+                                    <!-- 金額 -->
+                                    <form action="uk-margin" class="col-12 py-2" method="post">
+                                        <label>
+                                            <span class="">金額</span>
+                                        </label>
+                                        <input class="py-1 btn bg-input w-100 text-left" type="text">
+                                    </form>
+                                    <p class="text-right text-123ts-color w3-small">( 最低 1,000 最高
+                                        6,000 )</p>
+                                    <!-- 優惠 -->
+                                    <form action="uk-margin" class="col-12 py-2" method="post">
+                                        <label class="" for="form-horizontal-select">
+                                            <p class="">優惠</p>
+                                        </label>
+                                        <div class="uk-form-controls">
+                                            <select class="uk-select h-75 bg-input" id="form-horizontal-select">
+                                                <option>請選擇</option>
+                                                <option>優惠 01</option>
+                                                <option>優惠 02</option>
+                                                <option>優惠 03</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                    <div class="p-3">
+                                        <button class="uk-button bgc-loginbar-color text-black centerCenter col-12 "
+                                            type="button" style="border-radius: 5px;">確認送出</button>
+                                    </div>
+                                    <p class="col-12 fsz-08">
+                                        超商轉帳教學(請點避超商平台下。謝謝!)</p>
+                                    <!--  -->
+                                    <div class="row p-0 m-0">
+                                        <div class="col-3 btn  p-0 m-0">
+                                            <img src="../卡-img/桌機各分頁img/會員中心User/7-ELEVEN.png" alt="">
+                                        </div>
+                                        <div class="col-3 btn  p-0 m-0">
+                                            <img src="../卡-img/桌機各分頁img/會員中心User/FamilyMart.png" alt="">
+                                        </div>
+                                        <div class="col-3 btn  p-0 m-0">
+                                            <img src="../卡-img/桌機各分頁img/會員中心User/Hi-Life.png" alt="">
+                                        </div>
+                                        <div class="col-3 btn  p-0 m-0">
+                                            <img src="../卡-img/桌機各分頁img/會員中心User/icon_okmart.png" alt="">
+                                        </div>
+                                    </div>
+
+                                    <p class="col-12 fsz-08">
+                                        注意事項:
+                                        <br>
+                                        1. 請洽客服開通
+                                        <br>
+                                        2. 系統將發配一組專屬交易單號,請至您選擇的超商門市
+                                        <br>
+                                        進行燉費。
+                                        <br>
+                                        3. 繳費完成請妥善保管交易收據,以便查證。</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <script>indexLoginFooter();</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

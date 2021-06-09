@@ -44,11 +44,75 @@
     <!-- Header -->
     <script>PageHeader();</script>
 
-    <div class="container-fluid d-none d-md-block p-0 bgc-header-color">
-        <div class="container">
-            <div class="row py-2">
-                
-            </div>
+    <div class="container-fluid d-md-none p-0 bgc-header-color">
+        <div class="container bg-back pb-5">
+            <div class="row centerCenter p-4">
+                <!-- 帳號 -->
+                <div class="col-12 py-2 text-light">帳號 *</div>
+                <div class="col-12 py-2">
+                  <input type="text"
+                    class="w-100 px-3 py-1 text-secondary fsz-08 bg-theme border border-secondary w3-round-medium"
+                    placeholder="4~10碼英文或數字組合" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = '4~10碼英文或數字組合'" />
+                </div>
+                <!-- 密碼 -->
+                <div class="col-12 py-2 text-light">密碼 *</div>
+                <div class="col-12 py-2">
+                  <input type="text"
+                    class="w-100 px-3 py-1 text-secondary fsz-08 bg-theme border border-secondary w3-round-medium"
+                    placeholder="6~13碼英文或數字組合" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = '6~13碼英文或數字組合'" />
+                </div>
+                <!-- 確認密碼 -->
+                <div class="col-12 py-2 text-light">確認密碼 *</div>
+                <div class="col-12 py-2">
+                  <input type="text"
+                    class="w-100 px-3 py-1 text-secondary fsz-08 bg-theme border border-secondary w3-round-medium"
+                    placeholder="請再次輸入密碼" onfocus="this.placeholder = ''" onblur="this.placeholder = '請再次輸入密碼'" />
+                </div>
+                <!-- 姓名 -->
+                <div class="col-12 py-2 text-light">姓名 *</div>
+                <div class="col-12 py-2">
+                  <input type="text"
+                    class="w-100 px-3 py-1 text-secondary fsz-08 bg-theme border border-secondary w3-round-medium"
+                    placeholder="請輸入正確性名" onfocus="this.placeholder = ''" onblur="this.placeholder = '請輸入正確性名'" />
+                </div>
+                <!-- LINE ID -->
+                <div class="col-12 py-2 text-light">LINE ID *</div>
+                <div class="col-12 py-2">
+                  <input type="text"
+                    class="w-100 px-3 py-1 text-secondary fsz-08 bg-theme border border-secondary w3-round-medium"
+                    placeholder="請留下正確ID" onfocus="this.placeholder = ''" onblur="this.placeholder = '請留下正確ID'" />
+                </div>
+                <!-- 推薦碼 -->
+                <div class="col-12 py-2 text-light">推薦碼</div>
+                <div class="col-12 py-2">
+                  <input type="text"
+                    class="w-100 px-3 py-1 text-secondary fsz-08 bg-theme border border-secondary w3-round-medium"
+                    placeholder="非必填" onfocus="this.placeholder = ''" onblur="this.placeholder = '非必填'" />
+                </div>
+                <!-- 手機號碼 -->
+                <div class="col-12 py-2 text-light">手機號碼</div>
+                <div class="col-12 py-2">
+                  <input type="text" style="width: 66%;"
+                    class="px-3 py-1 text-secondary fsz-08 bg-theme border border-secondary w3-round-medium"
+                    placeholder="請輸入有效手機號碼" onfocus="this.placeholder = ''" onblur="this.placeholder = '請輸入有效手機號碼'" />
+                  <input type="submit" value="發送驗證碼"
+                    class="px-2 py-1 text-light fsz-08  text-center bg-theme border border-danger w3-round-medium" style="width: 32%;" />
+                </div>
+                <!-- 驗證碼 -->
+                <div class="col-12 py-2 text-light">驗證碼</div>
+                <div class="col-12 py-2">
+                  <input type="text"
+                    class="w-100 px-3 py-1 text-secondary fsz-08 bg-theme border border-secondary w3-round-medium"
+                    placeholder="虛擬帳號(儲值管道)" onfocus="this.placeholder = ''" onblur="this.placeholder = '虛擬帳號(儲值管道)'" />
+                </div>
+
+                <!-- 註冊 -->
+                <div class="col-12 py-2 centerCenter">
+                  <button class="btn w3-round-medium w3-medium font-weight-bold bgc-loginbar-color px-5 border-0 lp1">註冊</button>
+                </div>
+              </div>
         </div>
     </div>
 

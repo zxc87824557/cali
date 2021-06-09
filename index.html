@@ -83,44 +83,90 @@
     <div class="container">
       <div class="row py-1">
         <div class="col-12 text-right">
-          <!--  -->
+          <!-- 註冊 -->
           <a href="#modal-example1" class="input-size ml-2 text-center mr-1" uk-toggle>
-              <img class="img-fluid" src="./卡-img/登入條/註冊.png" alt="">
+            <img class="img-fluid" src="./卡-img/登入條/註冊.png" alt="">
           </a>
 
           <div id='modal-example1' uk-modal>
             <div class='uk-modal-dialog w3-round-large'>
-              <div class='px-3 py-1 bgc-loginbar-color' style='border-radius: 8px 8px 0  0;'>
-                <span class="pl-2 centerCenter">加入會員</span>
+              <div class='px-3 py-1 bgc-loginbar-color  row' style=' border-radius: 8px 8px 0 0;'>
+                <span class="pl-2 centerCenter font-weight-bold fsz-13">加入會員</span>
                 <button class='uk-modal-close-default text-dark' type='button' uk-close></button>
               </div>
               <div class="text-secondary bg-theme px-5 pt-3 pb-5">
                 <!--  -->
-                <p class="text-center py-1">公告專區</p>
-                <!--  -->
-                <ul uk-accordion="" class="uk-accordion">
-                  <!-- 1 -->
-                  <li class="uk-open">
-                    <a class="uk-accordion-title fsz-1 text-secondary" href="#">【標題】存款公告</a>
-                    <div class="uk-accordion-content">
-                      <p class="fsz-08 text-secondary">1. 一般存款沒有享受任何優惠的情況下，達到1倍流水即可出款
-                        <br>
-                        2. 一週三次，一天最多一次免手續費，每日超過免費次數，收取1%、2%手續費…最高5%
-                      </p>
-                    </div>
-                  </li>
-                  <!-- 2 -->
-                  <li>
-                    <a class="uk-accordion-title fsz-1 text-secondary" href="#">【標題】存款公告</a>
-                    <div class="uk-accordion-content" hidden="">
-                      <p class="fsz-08 text-secondary">
-                        1. 一般存款沒有享受任何優惠的情況下，達到1倍流水即可出款
-                        <br>
-                        2. 一週三次，一天最多一次免手續費，每日超過免費次數，收取1%、2%手續費…最高5%
-                      </p>
-                    </div>
-                  </li>
-                </ul>
+                <div class="row centerCenter p-4">
+                  <!-- 帳號 -->
+                  <div class="col-3 py-2 text-light">帳號 *</div>
+                  <div class="col-9 py-2">
+                    <input type="text"
+                      class="w-100 px-3 py-1 text-secondary fsz-08 bg-theme border border-secondary w3-round-medium"
+                      placeholder="4~10碼英文或數字組合" onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = '4~10碼英文或數字組合'" />
+                  </div>
+                  <!-- 密碼 -->
+                  <div class="col-3 py-2 text-light">密碼 *</div>
+                  <div class="col-9 py-2">
+                    <input type="text"
+                      class="w-100 px-3 py-1 text-secondary fsz-08 bg-theme border border-secondary w3-round-medium"
+                      placeholder="6~13碼英文或數字組合" onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = '6~13碼英文或數字組合'" />
+                  </div>
+                  <!-- 確認密碼 -->
+                  <div class="col-3 py-2 text-light">確認密碼 *</div>
+                  <div class="col-9 py-2">
+                    <input type="text"
+                      class="w-100 px-3 py-1 text-secondary fsz-08 bg-theme border border-secondary w3-round-medium"
+                      placeholder="請再次輸入密碼" onfocus="this.placeholder = ''" onblur="this.placeholder = '請再次輸入密碼'" />
+                  </div>
+                  <!-- 姓名 -->
+                  <div class="col-3 py-2 text-light">姓名 *</div>
+                  <div class="col-9 py-2">
+                    <input type="text"
+                      class="w-100 px-3 py-1 text-secondary fsz-08 bg-theme border border-secondary w3-round-medium"
+                      placeholder="請輸入正確性名" onfocus="this.placeholder = ''" onblur="this.placeholder = '請輸入正確性名'" />
+                  </div>
+                  <!-- LINE ID -->
+                  <div class="col-3 py-2 text-light">LINE ID *</div>
+                  <div class="col-9 py-2">
+                    <input type="text"
+                      class="w-100 px-3 py-1 text-secondary fsz-08 bg-theme border border-secondary w3-round-medium"
+                      placeholder="請留下正確ID" onfocus="this.placeholder = ''" onblur="this.placeholder = '請留下正確ID'" />
+                  </div>
+                  <!-- 推薦碼 -->
+                  <div class="col-3 py-2 text-light">推薦碼</div>
+                  <div class="col-9 py-2">
+                    <input type="text"
+                      class="w-100 px-3 py-1 text-secondary fsz-08 bg-theme border border-secondary w3-round-medium"
+                      placeholder="非必填" onfocus="this.placeholder = ''" onblur="this.placeholder = '非必填'" />
+                  </div>
+                  <!-- 手機號碼 -->
+                  <div class="col-3 py-2 text-light">手機號碼</div>
+                  <div class="col-9 py-2">
+                    <input type="text" style="width: 66%;"
+                      class="px-3 py-1 text-secondary fsz-08 bg-theme border border-secondary w3-round-medium"
+                      placeholder="請輸入有效手機號碼" onfocus="this.placeholder = ''" onblur="this.placeholder = '請輸入有效手機號碼'" />
+                    <input type="submit" value="發送驗證碼"
+                      class="px-2 py-1 text-light fsz-08 text-center bg-theme border border-danger w3-round-medium"
+                      style="width: 32%;" />
+                  </div>
+                  <!-- 驗證碼 -->
+                  <div class="col-3 py-2 text-light">驗證碼</div>
+                  <div class="col-9 py-2">
+                    <input type="text"
+                      class="w-100 px-3 py-1 text-secondary fsz-08 bg-theme border border-secondary w3-round-medium"
+                      placeholder="虛擬帳號(儲值管道)" onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = '虛擬帳號(儲值管道)'" />
+                  </div>
+
+                  <!-- 註冊 -->
+                  <div class="col-3 py-3 text-right text-secondary w3-medium"></div>
+                  <div class="col-9 py-2">
+                    <button
+                      class="btn w3-round-medium w3-medium font-weight-bold bgc-loginbar-color px-5 border-0 lp1">註冊</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -131,8 +177,9 @@
           <input type="password" class="px-2 input-style" placeholder="密碼" onfocus="this.placeholder = ''"
             onblur="this.placeholder = '密碼'" />
           <!-- 登入 -->
-          <a href="./page/indexLogin.html"><input class="input-size2 ml-2 text-center"
-              style="background: url(./卡-img/登入條/登入.png);" type="button"></a>
+          <a href="./page/indexLogin.html" class="input-size ml-2 text-center mr-1" uk-toggle>
+            <img class="img-fluid" src="./卡-img/登入條/登入.png" alt="">
+          </a>
         </div>
       </div>
     </div>
@@ -1568,13 +1615,63 @@
   <div class="container-fluid d-md-none p-0 m-0 fixed-bottom"
     style="background: url(./卡-img/手機index_img/footer.png) no-repeat center; background-size: contain;">
     <div class="centerCenter">
-      <a href="/page/indexLoginPage.html" class="pr-4 text-light" style="font-size: 24px;"><i class="fas fa-user"
-          style="font-size: 20px;"></i> 登入</a>
+      <!--  -->
+      <a href="#modal-example2" class="pr-4 text-light" style="font-style: 24px;" uk-toggle>
+        <i class="fas fa-user"
+          style="font-size: 20px;"> 登入</i>
+      </a>
+
+      <div id='modal-example2' class="uk-flex-top" uk-modal>
+        <div class='uk-modal-dialog uk-margin-auto-vertical w3-round-large'>
+          <div class='px-3 py-1 bgc-loginbar-color  row' style=' border-radius: 8px 8px 0 0;'>
+            <span class="pl-2 centerCenter font-weight-bold fsz-13">加入會員</span>
+            <button class='uk-modal-close-default text-dark' type='button' uk-close></button>
+          </div>
+          <div class="text-secondary bg-theme px-5 pt-3 pb-5">
+            <!--  -->
+            <div class="row centerCenter p-1">
+              <!-- 帳號 -->
+              <div class="col-12 py-2 text-light">
+                <i class="fas fa-user"></i>
+                <span class="pl-2">帳號</span>
+              </div>
+              <div class="col-12 py-2">
+                <input type="text"
+                  class="w-100 px-3 py-1 text-secondary bg-theme border border-secondary w3-round-medium"
+                  placeholder="請輸入帳號" onfocus="this.placeholder = ''" onblur="this.placeholder = '請輸入帳號'" />
+              </div>
+              <!-- 密碼 -->
+              <div class="col-12 py-2 text-light">
+                <i class="fas fa-unlock-alt"></i>
+                <span class="pl-2">密碼</span>
+              </div>
+              <div class="col-12 py-2">
+                <input type="text"
+                  class="w-100 px-3 py-1 text-secondary bg-theme border border-secondary w3-round-medium"
+                  placeholder="請輸入正確密碼" onfocus="this.placeholder = ''" onblur="this.placeholder = '請輸入正確密碼'" />
+              </div>
+
+              <!-- 登入使用按鈕 -->
+              <div class="col-12 px-2 pt-3">
+                <div class="row centerCenter">
+                  <a href="./page/indexLoginPage.html"
+                    class="col-12 my-1 btn w3-round-medium w3-medium font-weight-bold px-5 text-light bg-theme border border-danger lp1">立即註冊</a>
+                  <a href="./loginPage/loginPage.html"
+                    class="col-12 my-1 btn w3-round-medium w3-medium font-weight-bold bgc-loginbar-color px-5 border-0 lp1">登入</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
       <a href="/"><img style="height: 57px;" src="./卡-img/手機index_img/footer-home.png" alt=""></a>
-      <a href="/page/indexLoginPage.html" class="pl-4 text-light" style="font-size: 24px;"><i class="fas fa-user-plus"
+      <!--  -->
+      <a href="./page/indexLoginPage.html" class="pl-4 text-light" style="font-size: 24px;"><i class="fas fa-user-plus"
           style="font-size: 20px;"></i> 註冊</a>
     </div>
   </div>
+  
   <script src="./js/indexList.js"></script>
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
