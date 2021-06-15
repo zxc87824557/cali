@@ -106,7 +106,33 @@
 
 .bg-black {
     background: rgba(0, 0, 0, 0.6);
+    border: #f1cd6d solid 2px;
 }
+
+/* 合作品牌 */
+.pt-2-5 {
+    padding-top: 13px;
+}
+.px-6 {
+    padding: 0 200px;
+}
+.px-7 {
+    padding: 0 150px;
+}
+.grayscale{
+    filter:grayscale(1)
+}
+.grayscaleAct{
+    filter:grayscale(0)
+}
+#footerImg{
+    background:url(../卡-img/桌機index_img/底bg.png);
+    height: 723px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
 /* 玩家實測 */
 .long-text {
     overflow: hidden;

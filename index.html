@@ -69,9 +69,27 @@
     ::-webkit-scrollbar-thumb:hover {
       background: #f1cd6d
     }
-
     .pt-2-5 {
       padding-top: 13px;
+    }
+    .px-6 {
+      padding: 0 200px;
+    }
+    .px-7 {
+      padding: 0 150px;
+    }
+    .grayscale{
+      filter:grayscale(1)
+    }
+    .grayscaleAct{
+      filter:grayscale(0)
+    }
+    #footerImg{
+      background:url(./卡-img/桌機index_img/底bg.png);
+      height: 723px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
     }
   </style>
 </head>
@@ -171,10 +189,10 @@
             </div>
           </div>
           <!-- 帳號 -->
-          <input type="text" class="px-2 input-style" placeholder="用戶名(ID)" onfocus="this.placeholder = ''"
+          <input type="text" class="px-2" placeholder="用戶名(ID)" onfocus="this.placeholder = ''"
             onblur="this.placeholder = '用戶名(ID)'" />
           <!-- 密碼 -->
-          <input type="password" class="px-2 input-style" placeholder="密碼" onfocus="this.placeholder = ''"
+          <input type="password" class="px-2" placeholder="密碼" onfocus="this.placeholder = ''"
             onblur="this.placeholder = '密碼'" />
           <!-- 登入 -->
           <a href="./page/indexLogin.html" class="input-size ml-2 text-center mr-1" uk-toggle>
@@ -606,7 +624,7 @@
   </div>
 
   <!-- 主畫面--------------------------------------------------------------------------------- -->
-  <div class="container-fluid p-0 m-0 bgc-flex-v" style="background:url(./卡-img/桌機index_img/bg1.png) center;" id="axc">
+  <div class="container-fluid p-0 m-0 bgc-flex-v" style="background:url(./卡-img/桌機index_img/bg.png) center;" id="axc">
     <div class="container p-0 pb-3" style="padding-bottom: 5em;">
       <div class="row pt-4 d-none d-md-block">
         <img src="./卡-img/桌機index_img/title1.png" alt="">
@@ -701,33 +719,32 @@
         </p>
       </div>
     </div>
-    <!-- 手機版------------ 卡利娛樂集團------------------------ -->
+    <!-- 手機版------------ 賭場資訊------------------------ -->
     <div class="container d-md-none text-light pt-3 bgc-flex" style="background:url(./卡-img/桌機index_img/bgc2.png);">
       <div class="row centerCenter">
         <img src="./卡-img/手機index_img/title2.png" alt="">
         <!--  -->
         <ul class="uk-subnav centerCenter row py-3 px-0 m-0" uk-switcher>
           <li class="col-3 px-1">
-            <a href="#" class="border w3-round-large p-1 w3-border-yellow bgc-header-color">
+            <a href="#" class="cellPhonePic border w3-round-large p-1 w3-border-yellow bgc-header-color">
               <img class="img-fluid" src="./卡-img/桌機index_img/u澳門賭場資訊/1mgm.png" alt="">
             </a>
           </li>
           <li class="col-3 px-1">
-            <a href="#" class="border w3-round-large p-1 w3-border-deep-purple bg-theme">
+            <a href="#" class="cellPhonePic border w3-round-large p-1 w3-border-deep-purple bg-theme ">
               <img class="img-fluid" src="./卡-img/桌機index_img/u澳門賭場資訊/2銀河.png" alt="">
             </a>
           </li>
           <li class="col-3 px-1">
-            <a href="#" class="border w3-round-large p-1 w3-border-deep-purple bg-theme">
+            <a href="#" class="cellPhonePic border w3-round-large p-1 w3-border-deep-purple bg-theme">
               <img class="img-fluid" src="./卡-img/桌機index_img/u澳門賭場資訊/3澳門.png" alt="">
             </a>
           </li>
           <li class="col-3 px-1">
-            <a href="#" class="border w3-round-large p-1 w3-border-deep-purple bg-theme">
+            <a href="#" class="cellPhonePic border w3-round-large p-1 w3-border-deep-purple bg-theme">
               <img class="img-fluid" src="./卡-img/桌機index_img/u澳門賭場資訊/4新濠.png" alt="">
             </a>
           </li>
-
         </ul>
 
         <ul class="uk-switcher uk-margin">
@@ -1194,7 +1211,7 @@
   </script> -->
   <!-- 電腦版-------- 關於卡利 -------------------------->
   <div class=" text-light container-fluid p-0 m-0 bgc-flex-v d-none d-md-block"
-    style="background:url(./卡-img/桌機index_img/bg3.png);" id="axc">
+    style="background:url(./卡-img/桌機index_img/bg3.png);" id="axcA">
     <div class="container">
       <div class="row pt-3 d-none d-md-block">
         <img src="./卡-img/桌機index_img/title4.png" alt="">
@@ -1243,9 +1260,118 @@
       </div>
     </div>
   </div>
+  <!-- 電腦版-------- 賭場資訊 -------------------------->
+  <div class=" text-light container-fluid p-0 m-0 bgc-flex-v d-none d-md-block"
+    style="background:url(./卡-img/桌機index_img/賭場BG.png);" id="axcB">
+    <div class="container">
+      <div class="row pt-3 d-none d-md-block">
+        <img src="./卡-img/桌機index_img/title9.png" alt="">
+        <ul class="uk-subnav centerCenter row py-3 px-0 m-0 " uk-switcher>
+          <li class="col-3 px-1">
+            <a href="#" class="border w3-round-large p-1 w3-border-deep-purple bg-theme">
+              <img class="img-fluid grayscale grayscaleAct" src="./卡-img/桌機各分頁img/關於About/地點1-2.png" alt="">
+            </a>
+          </li>
+          <li class="col-3 px-1">
+            <a href="#" class="border w3-round-large p-1 w3-border-deep-purple bg-theme">
+              <img class="img-fluid grayscale" src="./卡-img/桌機各分頁img/關於About/地點2-2.png" alt="">
+            </a>
+          </li>
+          <li class="col-3 px-1">
+            <a href="#" class="border w3-round-large p-1 w3-border-deep-purple bg-theme">
+              <img class="img-fluid grayscale" src="./卡-img/桌機各分頁img/關於About/地點3-2.png" alt="">
+            </a>
+          </li>
+          <li class="col-3 px-1">
+            <a href="#" class="border w3-round-large p-1 w3-border-deep-purple bg-theme">
+              <img class="img-fluid grayscale" src="./卡-img/桌機各分頁img/關於About/地點4-2.png" alt="">
+            </a>
+          </li>
+        </ul>
+        <ul class="uk-switcher">
+          <!--  -->
+          <li class="px-3">
+            <p class="lp1">美高梅擁有大型的購物廣場，客人可享盡購物娛樂於一身的玩樂體驗。</p>
+            <div class="text-theme btnFollow">
+              <img id="chgicon" class="img-fluid" src="./卡-img/桌機index_img/u澳門賭場資訊/1地址icon.png" alt="">
+              <span>地址：</span>
+              <span>澳門美高梅二樓13號房</span>
+            </div>
+            <div class="">
+              <img class="img-fluid" src="./卡-img/桌機index_img/u澳門賭場資訊/2禮賓icon.png" alt="">
+              <span class="text-theme">禮賓部：</span>
+              <div class="row pb-3">
+                <p class="">電話：<span>+853 6326 1356</span></p>
+                <p class="pl-3">傳真：<span>+853 2878 2979</span></p>
+              </div>
+            </div>
+          </li>
+          <!--  -->
+          <li class="px-3">
+            <p class="lp1">新濠天地設有三間酒店，包括皇冠，君悅和滾石酒店。我們能為客人挑選滿意的酒店住宿，代訂水舞間娛樂門票等，讓貴賓盡情玩樂。</p>
+            <div class="text-theme">
+              <img class="img-fluid" src="./卡-img/桌機index_img/u澳門賭場資訊/1地址icon.png" alt="">
+              <span>地址：</span>
+              <span>澳門氹仔新濠天地滾石酒店五樓全層</span>
+            </div>
+            <div class="">
+              <img class="img-fluid" src="./卡-img/桌機index_img/u澳門賭場資訊/2禮賓icon.png" alt="">
+              <span class="text-theme">禮賓部：</span>
+              <div class="row pb-3">
+                <p class="">電話：<span>+853 6366 1356</span></p>
+                <p class="pl-3">傳真：<span>+853 2882 4337</span></p>
+              </div>
+            </div>
+          </li>
+          <!--  -->
+          <li class="px-3">
+            <p class="lp1">銀河酒店設有多采多姿的娛樂配套，保證讓客人真正感受最尊貴，最非凡的娛​​樂體驗。</p>
+            <div class="text-theme">
+              <img class="img-fluid" src="./卡-img/桌機index_img/u澳門賭場資訊/1地址icon.png" alt="">
+              <span>地址：</span>
+              <span>澳門銀河綜合渡假城東翼入口一樓</span>
+            </div>
+            <div class="">
+              <img class="img-fluid" src="./卡-img/桌機index_img/u澳門賭場資訊/2禮賓icon.png" alt="">
+              <span class="text-theme">禮賓部：</span>
+              <div class="row pb-3">
+                <p class="">電話：<span>+853 6283 3515</span></p>
+                <p class="pl-3">傳真：<span>+853 2899 2286</span></p>
+              </div>
+            </div>
+          </li>
+          <!--  -->
+          <li class="px-3">
+            <p class="lp1">新葡京酒店位於澳門半島的中心樞紐地帶，除可方便前往多個旅遊景點外，更備有12間備受讚賞的餐廳和24小時的娛樂表演，體驗精彩娛樂以及無比奢華，使客人樂而忘返。</p>
+            <div class="text-theme">
+              <img class="img-fluid" src="./卡-img/桌機index_img/u澳門賭場資訊/1地址icon.png" alt="">
+              <span>地址：</span>
+              <span>澳門葡京路新葡京U2樓</span>
+            </div>
+            <div class="">
+              <img class="img-fluid" src="./卡-img/桌機index_img/u澳門賭場資訊/2禮賓icon.png" alt="">
+              <span class="text-theme">禮賓部：</span>
+              <div class="row pb-3">
+                <p class="">電話：<span>+853 6362 1356</span></p>
+                <p class="pl-3">傳真：<span>+853 2871 8923</span></p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function(){
+      $(".btnFollow").click(function(){
+        $("#chgicon").attr("src","./卡-img/桌機各分頁img/關於About/地點1.png");
+      });
+    });
+  </script>
   <!-- 娛樂成文章 -->
   <div class="container-fluid p-0 m-0 bgc-flex-v d-none d-md-block" style="background:url(./卡-img/桌機index_img/bg1.png);"
-    id="axc">
+    id="axcC">
+    <div id="footerImg"></div>
     <div class="container" style="padding-bottom: 5em;">
       <div class="row pt-4 d-none d-md-block">
         <img src="./卡-img/桌機index_img/title5.png" alt="">
@@ -1510,78 +1636,80 @@
           <!-- 合作品牌 -->
           <div class="row">
             <img src="./卡-img/桌機index_img/title7.png" alt="" class="py-2 pb-4">
-            <div class="col-12 px-0" style="display: flex;justify-content: space-between;">
-              <div class="col my-auto">
-                <img class="img-fluid" src="./img/桌機index_img/各廠商/1-17.png" alt="">
+            <div class="col-12 px-6" style="display: flex;justify-content: space-between;">
+              <div class="my-auto">
+                <img class="img-fluid" style="width: 80px;" src="./img/桌機index_img/各廠商/1-17.png" alt="">
               </div>
-              <div class="col my-auto">
-                <img class="img-fluid" src="./img/桌機index_img/各廠商/1-01.png" alt="">
+              <div class="my-auto">
+                <img class="img-fluid" style="width: 80px;" src="./img/桌機index_img/各廠商/1-01.png" alt="">
               </div>
-              <div class="col my-auto">
-                <img class="img-fluid" src="./img/桌機index_img/各廠商/1-02.png" alt="">
+              <div class="my-auto">
+                <img class="img-fluid" style="width: 80px;" src="./img/桌機index_img/各廠商/1-02.png" alt="">
               </div>
-              <div class="col my-auto">
-                <img class="img-fluid" src="./img/桌機index_img/各廠商/1-03.png" alt="">
+              <div class="my-auto">
+                <img class="img-fluid" style="width: 80px;" src="./img/桌機index_img/各廠商/1-03.png" alt="">
               </div>
-              <div class="col my-auto">
-                <img class="img-fluid" src="./img/桌機index_img/各廠商/1-04.png" alt="">
+              <div class="my-auto">
+                <img class="img-fluid" style="width: 80px;" src="./img/桌機index_img/各廠商/1-04.png" alt="">
               </div>
-              <div class="col my-auto">
-                <img class="img-fluid" src="./img/桌機index_img/各廠商/1-06.png" alt="">
+              <div class="my-auto">
+                <img class="img-fluid" style="width: 80px;" src="./img/桌機index_img/各廠商/1-06.png" alt="">
               </div>
             </div>
-            <div class="col-12 pt-5 px-0" style="display: flex;justify-content: space-between;">
-              <div class="col my-auto">
-                <img class="img-fluid" src="./img/桌機index_img/各廠商/1-10.png" alt="">
+            <div class="col-12 pt-3 pb-4 px-7" style="display: flex;justify-content: space-between;">
+              <div class="my-auto">
+                <img class="img-fluid" style="width: 80px;" src="./img/桌機index_img/各廠商/1-10.png" alt="">
               </div>
-              <div class="col my-auto">
-                <img class="img-fluid" src="./img/桌機index_img/各廠商/1-11.png" alt="">
+              <div class="my-auto">
+                <img class="img-fluid" style="width: 80px;" src="./img/桌機index_img/各廠商/1-11.png" alt="">
               </div>
-              <div class="col my-auto">
-                <img class="img-fluid" src="./img/桌機index_img/各廠商/1-12.png" alt="">
+              <div class="my-auto">
+                <img class="img-fluid" style="width: 80px;" src="./img/桌機index_img/各廠商/1-12.png" alt="">
               </div>
-              <div class="col my-auto">
-                <img class="img-fluid" src="./img/桌機index_img/各廠商/1-07.png" alt="">
+              <div class="my-auto">
+                <img class="img-fluid" style="width: 80px;" src="./img/桌機index_img/各廠商/1-07.png" alt="">
               </div>
-              <div class="col my-auto">
-                <img class="img-fluid" src="./img/桌機index_img/各廠商/1-08.png" alt="">
+              <div class="my-auto">
+                <img class="img-fluid" style="width: 80px;" src="./img/桌機index_img/各廠商/1-08.png" alt="">
               </div>
-              <div class="col my-auto">
-                <img class="img-fluid" src="./img/桌機index_img/各廠商/1-12.png" alt="">
+              <div class="my-auto">
+                <img class="img-fluid" style="width: 80px;" src="./img/桌機index_img/各廠商/1-12.png" alt="">
               </div>
-              <div class="col my-auto">
-                <img class="img-fluid" src="./img/桌機index_img/各廠商/1-14.png" alt="">
+              <div class="my-auto">
+                <img class="img-fluid" style="width: 80px;" src="./img/桌機index_img/各廠商/1-14.png" alt="">
               </div>
             </div>
           </div>
           <!-- 國際 -->
           <div class="row justify-content-center">
             <img src="./卡-img/桌機index_img/title8.png" alt="" class="py-2 pb-4">
-            <div class="col my-auto">
-              <img src="./卡-img/桌機index_img/國際1.png" alt="">
+            <div class="col-12 pt-3 px-7" style="display: flex;justify-content: space-between;">
+              <div class="col my-auto">
+                <img src="./卡-img/桌機index_img/國際1.png" alt="">
+              </div>
+              <div class="col my-auto">
+                <img src="./卡-img/桌機index_img/國際2.png" alt="">
+              </div>
+              <div class="col my-auto">
+                <img src="./卡-img/桌機index_img/國際3.png" alt="">
+              </div>
+              <div class="col my-auto">
+                <img src="./卡-img/桌機index_img/國際4.png" alt="">
+              </div>
+              <div class="col my-auto">
+                <img src="./卡-img/桌機index_img/國際5.png" alt="">
+              </div>
+              <div class="col my-auto">
+                <img src="./卡-img/桌機index_img/國際6.png" alt="">
+              </div>
+              <div class="col my-auto">
+                <img src="./卡-img/桌機index_img/國際7.png" alt="">
+              </div>
+              <div class="col my-auto">
+                <img src="./卡-img/桌機index_img/國際8.png" alt="">
+              </div>
             </div>
-            <div class="col my-auto">
-              <img src="./卡-img/桌機index_img/國際2.png" alt="">
-            </div>
-            <div class="col my-auto">
-              <img src="./卡-img/桌機index_img/國際3.png" alt="">
-            </div>
-            <div class="col my-auto">
-              <img src="./卡-img/桌機index_img/國際4.png" alt="">
-            </div>
-            <div class="col my-auto">
-              <img src="./卡-img/桌機index_img/國際5.png" alt="">
-            </div>
-            <div class="col my-auto">
-              <img src="./卡-img/桌機index_img/國際6.png" alt="">
-            </div>
-            <div class="col my-auto">
-              <img src="./卡-img/桌機index_img/國際7.png" alt="">
-            </div>
-            <div class="col my-auto">
-              <img src="./卡-img/桌機index_img/國際8.png" alt="">
-            </div>
-            <div class="col-12 py-3 mt-3">
+            <div class="col-12 py-2 mt-3">
               <p class="text-center text-light">
                 <a href="./index.html">www.777vip.net</a>
                 Copyright© 2021 卡利. All Rights Reserved. 服務條款|隱私權保護政策
@@ -1689,6 +1817,7 @@
   </div>
 
   <script src="./js/indexList.js"></script>
+  <script src="./js/index.js"></script>
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">

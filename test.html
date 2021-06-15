@@ -45,10 +45,15 @@
 </head>
 
 <body>
-
-    
-    
-        
+    <a class="btnFollow" title="JQuery 換圖功能">JQuery 換圖功能</a>
+    <img src="./卡-img/桌機各分頁img/關於About/地點1.png"  id="chgicon">
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".btnFollow").toggle(function(){
+                    $("#chgicon").attr("src","./卡-img/桌機各分頁img/關於About/地點1-2.png");
+            });
+        });
+        </script>
 </body>
 
 </html>
