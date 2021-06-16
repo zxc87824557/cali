@@ -91,6 +91,14 @@
       position: absolute;
       bottom: 0;
     }
+    .btnStyle{
+      border-radius: 5px; 
+      width: 200px;
+      text-decoration: none;
+    }
+    .btnStyle:hover{
+      color: white;
+    }
   </style>
 </head>
 
@@ -179,7 +187,7 @@
                   </div>
 
                   <!-- 註冊 -->
-                  <div class="col-3 py-3 text-right text-secondary w3-medium"></div>
+                  <div class="col-3 py-2 text-right text-secondary w3-medium"></div>
                   <div class="col-9 py-2">
                     <button
                       class="btn w3-round-medium w3-medium font-weight-bold bgc-loginbar-color px-5 border-0 lp1">註冊</button>
@@ -357,7 +365,7 @@
       <div class="pt-3 text-light">
         <p class="text-center" style="height: 1px;width: 100%;background: #555;"></p>
       </div>
-      <div class="py-3 text-light">
+      <div class="py-2 text-light">
         <p class="text-center">星期日</p>
         <p class="text-black text-center bg-i-gold">BNG電子</p>
         <p class="text-center">14:30 至 02:30</p>
@@ -448,9 +456,9 @@
   <!-- MD Navigation Bars ------------------------------------>
   <div class="container-fluid p-0 d-lg-none bgc-header-color MdNavigationBorder">
     <div class="container">
-      <div class="row py-3" style="align-items: center;">
+      <div class="row py-2" style="align-items: center;">
         <!-- 漢堡圖 -->
-        <div class="col-4 text-left">
+        <div class="col-3 text-left">
           <!-- HamburgBtn -->
           <i class="fas fa-bars fa-2x" style="color:#f1cd6d" id="HamburgBtn" data-toggle="modal"
             data-target="#exampleModal0"></i>
@@ -460,70 +468,112 @@
               <div class="showMenuList modal-content">
                 <div class="modal-body p-0 m-0 slotBg-v text-light">
                   <!-- user -->
-                  <div class="row m-0 px-5 py-3 bg-theme w3-border-yellow">
+                  <div class="row m-0 px-5 py-2 bg-theme w3-border-yellow">
                     <div class="col-12 centerCenter">
                       <img class="centerCenter img-fluid" src="./卡-img/桌機index_img/h漢堡/0user.png" alt="">
                       <p class="text-center pt-1">user</p>
                     </div>
                   </div>
+                  <!-- 真人 -->
+                  <div class="row px-5 py-2">
+                    <a href="./index.html" class="col-12 text-decoration-none">
+                      <img class="img-fluid" src="./卡-img/桌機index_img/h漢堡/真人.png" alt="">
+                      <span class="text-light pl-3">真人娛樂</span>
+                    </a>
+                  </div>
+                  <!-- 體育 -->
+                  <div class="row px-5 py-2">
+                    <a href="./page/Promotion.html" class="col-12 text-decoration-none">
+                      <img class="img-fluid" src="./卡-img/桌機index_img/h漢堡/體育.png" alt="">
+                      <span class="text-light pl-3">體育博彩</span>
+                    </a>
+                  </div>
+                  <!-- 棋牌 -->
+                  <div class="row px-5 py-2">
+                    <a href="./Features page/GameIntro.html" class="col-12 text-decoration-none">
+                      <img class="img-fluid" src="./卡-img/桌機index_img/h漢堡/棋牌.png" alt="">
+                      <span class="text-light pl-3">麻將棋牌</span>
+                    </a>
+                  </div>
+                  <!-- 電子 -->
+                  <div class="row px-5 py-2">
+                    <a href="./blog/AllBlog.html" class="col-12 text-decoration-none">
+                      <img class="img-fluid" src="./卡-img/桌機index_img/h漢堡/電子.png" alt="">
+                      <span class="text-light pl-3">電子遊戲</span>
+                    </a>
+                  </div>
+                  <!-- 賓果 -->
+                  <div class="row px-5 py-2">
+                    <a href="./header page/3FAQ.html" class="col-12 text-decoration-none">
+                      <img class="img-fluid" src="./卡-img/桌機index_img/h漢堡/賓果.png" alt="">
+                      <span class="text-light pl-3">賓果遊戲</span>
+                    </a>
+                  </div>
+                  <!-- 捕魚 -->
+                  <div class="row px-5 py-2" style="border-bottom: #ea9127 2px solid;">
+                    <a href="./header page/4RepairTime.html" class="col-12 text-decoration-none">
+                      <img class="img-fluid" src="./卡-img/桌機index_img/h漢堡/捕魚.png" alt="">
+                      <span class="text-light pl-3">捕魚王</span>
+                    </a>
+                  </div>
                   <!-- 0.首頁 -->
-                  <div class="row px-5 py-3">
+                  <div class="row px-5 py-2">
                     <a href="./index.html" class="col-12 text-decoration-none">
                       <img class="img-fluid" src="./卡-img/桌機index_img/h漢堡/0首頁.png" alt="">
                       <span class="text-light pl-3">首頁</span>
                     </a>
                   </div>
                   <!-- 1.優惠活動 -->
-                  <div class="row px-5 py-3">
+                  <div class="row px-5 py-2">
                     <a href="./page/Promotion.html" class="col-12 text-decoration-none">
                       <img class="img-fluid" src="./卡-img/桌機index_img/h漢堡/1優惠.png" alt="">
                       <span class="text-light pl-3">優惠活動</span>
                     </a>
                   </div>
                   <!-- 2遊戲介紹 -->
-                  <div class="row px-5 py-3">
+                  <div class="row px-5 py-2">
                     <a href="./Features page/GameIntro.html" class="col-12 text-decoration-none">
                       <img class="img-fluid" src="./卡-img/桌機index_img/h漢堡/2遊戲介紹.png" alt="">
                       <span class="text-light pl-3">遊戲介紹</span>
                     </a>
                   </div>
                   <!-- 3.部落格 -->
-                  <div class="row px-5 py-3">
+                  <div class="row px-5 py-2">
                     <a href="./blog/AllBlog.html" class="col-12 text-decoration-none">
                       <img class="img-fluid" src="./卡-img/桌機index_img/h漢堡/3部落格.png" alt="">
                       <span class="text-light pl-3">部落格</span>
                     </a>
                   </div>
                   <!-- 4公告 -->
-                  <div class="row px-5 py-3">
+                  <div class="row px-5 py-2">
                     <a href="./header page/3FAQ.html" class="col-12 text-decoration-none">
                       <img class="img-fluid" src="./卡-img/桌機index_img/h漢堡/4公告.png" alt="">
-                      <span class="text-light pl-3">公告</span>
+                      <span class="text-light pl-3">常見問題</span>
                     </a>
                   </div>
                   <!-- 5.維護時間 -->
-                  <div class="row px-5 py-3">
+                  <div class="row px-5 py-2">
                     <a href="./header page/4RepairTime.html" class="col-12 text-decoration-none">
                       <img class="img-fluid" src="./卡-img/桌機index_img/h漢堡/5維護.png" alt="">
                       <span class="text-light pl-3">維護時間</span>
                     </a>
                   </div>
                   <!-- 6.APP下載 -->
-                  <div class="row px-5 py-3">
+                  <div class="row px-5 py-2">
                     <a href="./header page/2AppDownload.html" class="col-12 text-decoration-none">
                       <img class="img-fluid" src="./卡-img/桌機index_img/h漢堡/6app下載.png" alt="">
                       <span class="text-light pl-3">APP下載</span>
                     </a>
                   </div>
                   <!-- 7.合營代理 -->
-                  <div class="row px-5 py-3">
+                  <div class="row px-5 py-2">
                     <a href="./header page/0Agent.html" class="col-12 text-decoration-none">
                       <img class="img-fluid" src="./卡-img/桌機index_img/h漢堡/7代理加盟.png" alt="">
                       <span class="text-light pl-3">合營代理</span>
                     </a>
                   </div>
                   <!-- 8.關於卡利 -->
-                  <div class="row px-5 py-3">
+                  <div class="row px-5 py-2">
                     <a href="./header page/1AboutUs.html" class="col-12 text-decoration-none">
                       <img class="img-fluid" src="./卡-img/桌機index_img/h漢堡/8關於.png" alt="">
                       <span class="text-light pl-3">關於卡利</span>
@@ -541,13 +591,13 @@
           </div>
         </div>
         <!-- LOGO -->
-        <div class="col-4 text-center">
+        <div class="col-6 text-center">
           <div class="text-center" style="margin-left: -5%;"><a href="./index.html"><img
                 src="./卡-img/手機index_img/logo.png" alt="" class="img-fluid"></a></div>
         </div>
         <!-- 24HR客服 -->
-        <div class="col-4">
-          <div class="text-right mr-3"><img id="hrServiceBtn" src="./卡-img/手機index_img/24h.png" alt="" class="img-fluid"
+        <div class="col-3 p-1 pl-3">
+          <div class="text-right"><img id="hrServiceBtn" src="./卡-img/手機index_img/24h.png" alt="" class="img-fluid"
               data-toggle="modal" data-target="#exampleModal"></div>
         </div>
         <!-- 24HR客服 Modal -->
@@ -603,7 +653,7 @@
   </div>
   <!-- 相通 ------------------------------------------------------------------------>
   <!-- marquee -->
-  <div class="container-fluid p-0 m-0">
+  <div id="" class="container-fluid p-0 m-0">
     <div class="bgc-flex" style="background-color: black; height: 28px;">
       <div class="row p-0 m-0">
         <div class="text-center" style="width: 10%;">
@@ -626,7 +676,7 @@
   <!-- 主畫面--------------------------------------------------------------------------------- -->
   <div class="container-fluid p-0 m-0 bgc-flex-v" style="background:url(./卡-img/桌機index_img/bg.png) center;" id="axc">
     <div class="container p-0 pb-3" style="padding-bottom: 5em;">
-      <div class="row pt-4 d-none d-md-block">
+      <div class="row pt-2 d-none d-md-block">
         <img src="./卡-img/桌機index_img/title1.png" alt="">
       </div>
       <!-- 遊戲廳 -------------------------------------------------------------->
@@ -724,7 +774,7 @@
       <div class="row centerCenter">
         <img src="./卡-img/手機index_img/title2.png" alt="">
         <!--  -->
-        <ul class="uk-subnav centerCenter row py-3 px-0 m-0" uk-switcher>
+        <ul class="uk-subnav centerCenter row py-2 px-0 m-0" uk-switcher>
           <li class="col-3 px-1">
             <a href="#" class="cellPhonePic border w3-round-large p-1 w3-border-yellow bgc-header-color">
               <img class="img-fluid" src="./卡-img/桌機index_img/u澳門賭場資訊/1mgm.png" alt="">
@@ -830,7 +880,7 @@
             <p class="pt-2 px-4 text-center" style="font-size: 28px;">
               卡利娛樂城 評論
             </p>
-            <div class="row py-3 px-5">
+            <div class="row py-2 px-5">
               <div class="col-7">
                 <div class="progress mb-2">
                   <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 95%">
@@ -985,29 +1035,29 @@
       <div class="row pt-3 d-none d-md-block">
         <img src="./卡-img/桌機index_img/title2.png" alt="">
       </div>
-      <div class="row px-3 py-3 py-lg-4 m-0 d-none d-md-block">
+      <div class="row px-3 py-2 py-lg-4 m-0 d-none d-md-block">
         <div class="col-12 pt-1 d-none d-md-block">
           <div class="variable-width text-light mt-4">
-            <div class="mr-3 bg-black">
-              <img src="./卡-img/桌機index_img/優惠1.png" alt="">
+            <div class="mr-3 bg-black" style="border-radius: 8px;">
+              <img src="./卡-img/桌機index_img/優惠1.png" alt="" style="border-radius: 8px 8px 0 0;">
               <h2 class="text-light p-2" style="font-size: 24px; font-weight: bold;">翻本金</h2>
               <p class="long-text pl-2">統一周一申請，週二發放</p>
               <a href="./page/Promotion.html" class="float-right mr-2 text-light">更多</a>
             </div>
-            <div class="bg-black mr-3">
-              <img src="./卡-img/桌機index_img/優惠2.png" alt="">
+            <div class="bg-black mr-3" style="border-radius: 8px;">
+              <img src="./卡-img/桌機index_img/優惠2.png" alt="" style="border-radius: 8px 8px 0 0;">
               <h2 class="text-light p-2" style="font-size: 24px; font-weight: bold;">晉級禮</h2>
               <p class="long-text pl-2">晉級辦法與獎勵機制</p>
               <a href="./page/Promotion.html" class="float-right mr-2 text-light">更多</a>
             </div>
-            <div class="bg-black mr-3">
-              <img src="./卡-img/桌機index_img/優惠3.png" alt="">
+            <div class="bg-black mr-3" style="border-radius: 8px;">
+              <img src="./卡-img/桌機index_img/優惠3.png" alt="" style="border-radius: 8px 8px 0 0;">
               <h2 class="text-light p-2" style="font-size: 24px; font-weight: bold;">首儲紅利</h2>
               <p class="long-text pl-2">存1000送50%，只有我們最挺你</p>
               <a href="./page/Promotion.html" class="float-right mr-2 text-light">更多</a>
             </div>
-            <div class="bg-black mr-3">
-              <img src="./卡-img/桌機index_img/優惠4.png" alt="">
+            <div class="bg-black mr-3" style="border-radius: 8px;">
+              <img src="./卡-img/桌機index_img/優惠4.png" alt="" style="border-radius: 8px 8px 0 0;">
               <h2 class="text-light p-2" style="font-size: 24px; font-weight: bold;">二儲優惠</h2>
               <p class="long-text pl-2">二次儲值為1000以上</p>
               <a href="./page/Promotion.html" class="float-right mr-2 text-light">更多</a>
@@ -1057,7 +1107,7 @@
         <div class="col-12 col-lg-6 my-auto">
           <div class="row m-0 pt-3">
             <div class="col-6">
-              <img src="./卡-img/桌機index_img/評論.png" class="img-fluid pt-4" alt="">
+              <img src="./卡-img/桌機index_img/評論.png" class="img-fluid pt-2" alt="">
               </a>
             </div>
             <div class="col-6">
@@ -1266,7 +1316,7 @@
     <div class="container">
       <div class="row pt-3 d-none d-md-block">
         <img src="./卡-img/桌機index_img/title9.png" alt="">
-        <ul class="uk-subnav centerCenter row py-3 px-0 m-0 " uk-switcher>
+        <ul class="uk-subnav centerCenter row py-2 px-0 m-0 " uk-switcher>
           <li class="col-3 px-1">
             <a href="#" class="border w3-round-large p-1 w3-border-deep-purple bg-theme">
               <img class="img-fluid grayscale grayscaleAct" src="./卡-img/桌機各分頁img/關於About/地點1-2.png" alt="">
@@ -1372,101 +1422,106 @@
   <div class="container-fluid p-0 m-0 bgc-flex-v d-none d-md-block" style="background:url(./卡-img/桌機index_img/bg1.png);"
     id="axcC">
     <div id="footerImg"></div>
-    <div class="container" style="padding-bottom: 5em;">
+    <div class="container" style="padding-bottom: 3em;">
       <div class="row pt-4 d-none d-md-block">
         <img src="./卡-img/桌機index_img/title5.png" alt="">
         <div class="d-none d-md-block">
           <!-- blog -->
-          <div class="row py-2 pt-4">
-            <div class="col-12 mx-1 BlogGameBg py-2 px-5 w3-round-large">
-              <a href="./blog/AllBlog.html">
+          <a href="./blog/AllBlog.html">
+            <div class="row py-2 pt-4">
+              <div class="col-12 mx-1 BlogGameBg py-2 px-5 w3-round-large">
                 <p class="w3-large pb-2 text-justify BlogGameTColor uk-text-bold lp1 btn">
                   線上真人百家樂技巧分析！</p>
-              </a>
-              <p class="float-right pt-2 BlogGameTColor ">2020.09.17</p>
+                <p class="float-right pt-2 BlogGameTColor ">2020.09.17</p>
+              </div>
             </div>
-          </div>
-          <div class="row py-1 pt-1">
-            <div class="col-12 mx-1 BlogGameBg py-2 px-5 w3-round-large">
-              <a href="./blog/AllBlog.html">
+          </a>
+          <a href="./blog/AllBlog.html">
+            <div class="row py-2 pt-2">
+              <div class="col-12 mx-1 BlogGameBg py-2 px-5 w3-round-large">
                 <p class="w3-large pb-2 text-justify BlogGameTColor uk-text-bold lp1 btn">
                   線上真人百家樂技巧分析！</p>
-              </a>
-              <p class="float-right pt-2 BlogGameTColor ">2020.09.17</p>
+                <p class="float-right pt-2 BlogGameTColor ">2020.09.17</p>
+              </div>
             </div>
-          </div>
-          <div class="row py-1 pt-1">
-            <div class="col-12 mx-1 BlogGameBg py-2 px-5 w3-round-large">
-              <a href="./blog/AllBlog.html">
+          </a>
+          <a href="./blog/AllBlog.html">
+            <div class="row py-2 pt-2">
+              <div class="col-12 mx-1 BlogGameBg py-2 px-5 w3-round-large">
                 <p class="w3-large pb-2 text-justify BlogGameTColor uk-text-bold lp1 btn">
                   線上真人百家樂技巧分析！</p>
-              </a>
-              <p class="float-right pt-2 BlogGameTColor ">2020.09.17</p>
+                <p class="float-right pt-2 BlogGameTColor ">2020.09.17</p>
+              </div>
             </div>
-          </div>
-          <div class="row py-1 pt-1">
-            <div class="col-12 mx-1 BlogGameBg py-2 px-5 w3-round-large">
-              <a href="./blog/AllBlog.html">
+          </a>
+          <a href="./blog/AllBlog.html">
+            <div class="row py-2 pt-2">
+              <div class="col-12 mx-1 BlogGameBg py-2 px-5 w3-round-large">
                 <p class="w3-large pb-2 text-justify BlogGameTColor uk-text-bold lp1 btn">
                   線上真人百家樂技巧分析！</p>
-              </a>
-              <p class="float-right pt-2 BlogGameTColor ">2020.09.17</p>
+                <p class="float-right pt-2 BlogGameTColor ">2020.09.17</p>
+              </div>
             </div>
-          </div>
-          <div class="row py-1 pt-1">
-            <div class="col-12 mx-1 BlogGameBg py-2 px-5 w3-round-large">
-              <a href="./blog/AllBlog.html">
+          </a>
+          <a href="./blog/AllBlog.html">
+            <div class="row py-2 pt-2">
+              <div class="col-12 mx-1 BlogGameBg py-2 px-5 w3-round-large">
                 <p class="w3-large pb-2 text-justify BlogGameTColor uk-text-bold lp1 btn">
                   線上真人百家樂技巧分析！</p>
-              </a>
-              <p class="float-right pt-2 BlogGameTColor ">2020.09.17</p>
+                <p class="float-right pt-2 BlogGameTColor ">2020.09.17</p>
+              </div>
             </div>
-          </div>
-          <div class="row py-1 pt-1">
-            <div class="col-12 mx-1 BlogGameBg py-2 px-5 w3-round-large">
-              <a href="./blog/AllBlog.html">
+          </a>
+          <a href="./blog/AllBlog.html">
+            <div class="row py-2 pt-2">
+              <div class="col-12 mx-1 BlogGameBg py-2 px-5 w3-round-large">
                 <p class="w3-large pb-2 text-justify BlogGameTColor uk-text-bold lp1 btn">
                   線上真人百家樂技巧分析！</p>
-              </a>
-              <p class="float-right pt-2 BlogGameTColor ">2020.09.17</p>
+                <p class="float-right pt-2 BlogGameTColor ">2020.09.17</p>
+              </div>
             </div>
-          </div>
-          <div class="row py-1 pt-1">
-            <div class="col-12 mx-1 BlogGameBg py-2 px-5 w3-round-large">
-              <a href="./blog/AllBlog.html">
+          </a>
+          <a href="./blog/AllBlog.html">
+            <div class="row py-2 pt-2">
+              <div class="col-12 mx-1 BlogGameBg py-2 px-5 w3-round-large">
                 <p class="w3-large pb-2 text-justify BlogGameTColor uk-text-bold lp1 btn">
                   線上真人百家樂技巧分析！</p>
-              </a>
-              <p class="float-right pt-2 BlogGameTColor ">2020.09.17</p>
+                <p class="float-right pt-2 BlogGameTColor ">2020.09.17</p>
+              </div>
             </div>
-          </div>
-          <div class="row py-1 pt-1">
-            <div class="col-12 mx-1 BlogGameBg py-2 px-5 w3-round-large">
-              <a href="./blog/AllBlog.html">
+          </a>
+          <a href="./blog/AllBlog.html">
+            <div class="row py-2 pt-2">
+              <div class="col-12 mx-1 BlogGameBg py-2 px-5 w3-round-large">
                 <p class="w3-large pb-2 text-justify BlogGameTColor uk-text-bold lp1 btn">
                   線上真人百家樂技巧分析！</p>
-              </a>
-              <p class="float-right pt-2 BlogGameTColor ">2020.09.17</p>
+                <p class="float-right pt-2 BlogGameTColor ">2020.09.17</p>
+              </div>
             </div>
-          </div>
-          <div class="row py-1 pt-1">
-            <div class="col-12 mx-1 BlogGameBg py-2 px-5 w3-round-large">
-              <a href="./blog/AllBlog.html">
+          </a>
+          <a href="./blog/AllBlog.html">
+            <div class="row py-2 pt-2">
+              <div class="col-12 mx-1 BlogGameBg py-2 px-5 w3-round-large">
                 <p class="w3-large pb-2 text-justify BlogGameTColor uk-text-bold lp1 btn">
                   線上真人百家樂技巧分析！</p>
-              </a>
-              <p class="float-right pt-2 BlogGameTColor ">2020.09.17</p>
+                <p class="float-right pt-2 BlogGameTColor ">2020.09.17</p>
+              </div>
             </div>
-          </div>
-          <div class="row py-1 pt-1">
-            <div class="col-12 mx-1 BlogGameBg py-2 px-5 w3-round-large">
-              <a href="./blog/AllBlog.html">
+          </a>
+          <a href="./blog/AllBlog.html">
+            <div class="row py-2 pt-2">
+              <div class="col-12 mx-1 BlogGameBg py-2 px-5 w3-round-large">
                 <p class="w3-large pb-2 text-justify BlogGameTColor uk-text-bold lp1 btn">
                   線上真人百家樂技巧分析！</p>
-              </a>
-              <p class="float-right pt-2 BlogGameTColor ">2020.09.17</p>
+                <p class="float-right pt-2 BlogGameTColor ">2020.09.17</p>
+              </div>
             </div>
-          </div>
+          </a>
+          <a href="./blog/AllBlog.html" style="text-decoration:none">
+            <div class="row py-2 pt-2 centerCenter">
+              <button class="bgc-loginbar-color py-1 btnStyle">看更多娛樂城新聞</button>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -1475,7 +1530,7 @@
     <div class="container-fluid p-0 m-0 bgc-flex-v d-none d-md-block">
       <div class="container">
         <div class="row">
-          <img src="./卡-img/桌機index_img/title6.png" alt="" class="py-3">
+          <img src="./卡-img/桌機index_img/title6.png" alt="" class="pb-4">
           <div class="" style="width: 14.2%;">
             <p class="text-light text-center" style="font-size: 1.2rem; border-bottom: #efe9e9 3px solid;">
               真人娛樂</p>
