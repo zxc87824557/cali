@@ -54,3 +54,12 @@ $(".cellPhonePic").click(function (event) {
     $(this).addClass('bgc-header-color');
     $(this).removeClass('bg-theme');
 });
+
+$("#repairBotton").click(function(){
+    console.log($("#repairTime").hasClass('hide'));
+    if($("#repairTime").hasClass('hide')){
+        $("#repairTime").removeClass('hide')
+    }else{
+        $("#repairTime").addClass('hide')
+    }
+})

@@ -66,6 +66,24 @@
     border-bottom: 2px solid #d8cac5b4;
 }
 
+/* 維護時間 */
+.btnStyle{
+    border-radius: 5px; 
+    width: 200px;
+    text-decoration: none;
+}
+.btnStyle:hover{
+    color: white;
+}
+k-accordion-title:focus, .uk-accordion-title:hover {
+color: #ea9127;
+text-decoration: none;
+outline: 0;
+}
+.hide{
+    transform: translate(-50%);
+}
+
 .BMaintenanceTime {
     /* width: 50px;
     height: 145px; */
@@ -192,3 +210,4 @@
     background-attachment: fixed;
     background-size: cover;
 }
+

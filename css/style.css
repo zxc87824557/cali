@@ -308,3 +308,43 @@ a .BlogGameTColor:hover {
     border: 1px solid #999;
     color: #999;
 }
+
+/* 維護時間 */
+::-webkit-scrollbar {
+    /* display: none; */
+    width: 10px;
+}
+
+  /* 長條 */
+::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px grey; */
+    border-radius: 10px;
+    background: rgb(231, 231, 231);
+}
+
+  /* 短條 */
+::-webkit-scrollbar-thumb {
+    background: #ea9127;
+    border-radius: 10px;
+}
+
+  /* hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #f1cd6d
+}
+.btnStyle{
+    border-radius: 5px; 
+    width: 200px;
+    text-decoration: none;
+}
+.btnStyle:hover{
+    color: white;
+}
+k-accordion-title:focus, .uk-accordion-title:hover {
+color: #ea9127;
+text-decoration: none;
+outline: 0;
+}
+.hide{
+    transform: translate(-50%);
+}

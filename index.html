@@ -91,7 +91,7 @@
       position: absolute;
       bottom: 0;
     }
-    .btnStyle{
+    /* .btnStyle{
       border-radius: 5px; 
       width: 200px;
       text-decoration: none;
@@ -99,6 +99,14 @@
     .btnStyle:hover{
       color: white;
     }
+    .uk-accordion-title:focus, .uk-accordion-title:hover {
+    color: #ea9127;
+    text-decoration: none;
+    outline: 0;
+    }
+    .hide{
+      transform: translate(-50%);
+    } */
   </style>
 </head>
 
@@ -278,99 +286,98 @@
       </a>
     </div>
   </div>
-
   <!-- 維護時間 -->
-  <div class="dropleft d-none d-md-block position-absolute">
-    <!-- BMaintenanceTime 控制項 -->
-    <a class="btn BMaintenanceTime p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-      id="dropdownMenuReference"><img src="./卡-img/桌機index_img/維修.png" class="img-fluid p-0 m-0" alt=""></a>
-    <div class="dropdown-menu px-3 bgc-header-color" aria-labelledby="dropdownMenuReference"
-      style="height: 300px; overflow: scroll;overflow-x: hidden;">
-      <div class="pt-3">
-        <p class="text-center text-light">緊急維修</p>
-        <p class="text-black text-center bg-i-gold">幸運棋牌</p>
-        <p class="text-center text-light">01/12/2020 02:00:00</p>
+  <div class="d-none d-md-block">
+    <div id="repairTime" class=" hide row p-0 m-0" style="width: 500px; height: 300px; z-index: 100 ;position: fixed; top: 250px;">
+      <!-- BMaintenanceTime 控制項 -->
+      <div class="col-6 bgc-header-color" style="height: 300px; overflow: scroll;overflow-x: hidden">
+        <div class="pt-3">
+          <p class="text-center text-light">緊急維修</p>
+          <p class="text-black text-center bg-i-gold">幸運棋牌</p>
+          <p class="text-center text-light">01/12/2020 02:00:00</p>
+        </div>
+        <div class="pt-3">
+          <p class="text-center" style="height: 1px;width: 100%;background: #555;"></p>
+        </div>
+        <div class="pt-3 text-light">
+          <p class="text-center">星期一</p>
+          <p class="text-black text-center bg-i-gold">9K彩票</p>
+          <p class="text-center">00:00 至 00:00</p>
+        </div>
+        <div class="pt-3 text-light">
+          <p class="text-black text-center bg-i-gold">Super體育</p>
+          <p class="text-center">12:30 至 16:00</p>
+        </div>
+        <div class="pt-3 text-light">
+          <p class="text-black text-center bg-i-gold">WM百家樂</p>
+          <p class="text-center">12:00 至 14:30</p>
+        </div>
+        <div class="pt-3 text-light">
+          <p class="text-black text-center bg-i-gold">任你博體育</p>
+          <p class="text-center">16:00 至 18:00</p>
+        </div>
+        <div class="pt-3 text-light">
+          <p class="text-black text-center bg-i-gold">六合彩539</p>
+          <p class="text-center">12:30 至 16:30</p>
+        </div>
+        <div class="pt-3 text-light">
+          <p class="text-black text-center bg-i-gold">幸運棋牌</p>
+          <p class="text-center">23:00 至 00:00</p>
+        </div>
+        <div class="pt-3 text-light">
+          <p class="text-black text-center bg-i-gold">歐博百家樂</p>
+          <p class="text-center">08:00 至 12:00</p>
+        </div>
+        <div class="pt-3 text-light">
+          <p class="text-black text-center bg-i-gold">沙龍百家樂</p>
+          <p class="text-center">10:00 至 12:30</p>
+        </div>
+        <div class="pt-3 text-light">
+          <p class="text-center" style="height: 1px;width: 100%;background: #555;"></p>
+        </div>
+        <div class="pt-3 text-light">
+          <p class="text-center">星期二</p>
+          <p class="text-black text-center bg-i-gold">RTG電子</p>
+          <p class="text-center">07:00 至 09:00</p>
+        </div>
+        <div class="pt-3 text-light">
+          <p class="text-center" style="height: 1px;width: 100%;background: #555;"></p>
+        </div>
+        <div class="pt-3 text-light">
+          <p class="text-center">星期三</p>
+          <p class="text-black text-center bg-i-gold">DG電子</p>
+          <p class="text-center">07:00 至 10:00</p>
+        </div>
+        <div class="pt-3 text-light">
+          <p class="text-black text-center bg-i-gold">MG棋牌</p>
+          <p class="text-center">11:00 至 13:00</p>
+        </div>
+        <div class="pt-3 text-light">
+          <p class="text-center" style="height: 1px;width: 100%;background: #555;"></p>
+        </div>
+        <div class="pt-3 text-light">
+          <p class="text-center">星期四</p>
+          <p class="text-black text-center bg-i-gold">SimplePlay電子</p>
+          <p class="text-center">11:00 至 13:30</p>
+        </div>
+        <div class="pt-3 text-light">
+          <p class="text-center" style="height: 1px;width: 100%;background: #555;"></p>
+        </div>
+        <div class="pt-3 text-light">
+          <p class="text-center">星期五</p>
+          <p class="text-black text-center bg-i-gold">SimplePlay電子</p>
+          <p class="text-center">15:00 至 19:00</p>
+        </div>
+        <div class="pt-3 text-light">
+          <p class="text-center" style="height: 1px;width: 100%;background: #555;"></p>
+        </div>
+        <div class="py-2 text-light">
+          <p class="text-center">星期日</p>
+          <p class="text-black text-center bg-i-gold">BNG電子</p>
+          <p class="text-center">14:30 至 02:30</p>
+        </div>
       </div>
-      <div class="pt-3">
-        <p class="text-center" style="height: 1px;width: 100%;background: #555;"></p>
-      </div>
-      <div class="pt-3 text-light">
-        <p class="text-center">星期一</p>
-        <p class="text-black text-center bg-i-gold">9K彩票</p>
-        <p class="text-center">00:00 至 00:00</p>
-      </div>
-      <div class="pt-3 text-light">
-        <p class="text-black text-center bg-i-gold">Super體育</p>
-        <p class="text-center">12:30 至 16:00</p>
-      </div>
-      <div class="pt-3 text-light">
-        <p class="text-black text-center bg-i-gold">WM百家樂</p>
-        <p class="text-center">12:00 至 14:30</p>
-      </div>
-      <div class="pt-3 text-light">
-        <p class="text-black text-center bg-i-gold">任你博體育</p>
-        <p class="text-center">16:00 至 18:00</p>
-      </div>
-      <div class="pt-3 text-light">
-        <p class="text-black text-center bg-i-gold">六合彩539</p>
-        <p class="text-center">12:30 至 16:30</p>
-      </div>
-      <div class="pt-3 text-light">
-        <p class="text-black text-center bg-i-gold">幸運棋牌</p>
-        <p class="text-center">23:00 至 00:00</p>
-      </div>
-      <div class="pt-3 text-light">
-        <p class="text-black text-center bg-i-gold">歐博百家樂</p>
-        <p class="text-center">08:00 至 12:00</p>
-      </div>
-      <div class="pt-3 text-light">
-        <p class="text-black text-center bg-i-gold">沙龍百家樂</p>
-        <p class="text-center">10:00 至 12:30</p>
-      </div>
-      <div class="pt-3 text-light">
-        <p class="text-center" style="height: 1px;width: 100%;background: #555;"></p>
-      </div>
-      <div class="pt-3 text-light">
-        <p class="text-center">星期二</p>
-        <p class="text-black text-center bg-i-gold">RTG電子</p>
-        <p class="text-center">07:00 至 09:00</p>
-      </div>
-      <div class="pt-3 text-light">
-        <p class="text-center" style="height: 1px;width: 100%;background: #555;"></p>
-      </div>
-      <div class="pt-3 text-light">
-        <p class="text-center">星期三</p>
-        <p class="text-black text-center bg-i-gold">DG電子</p>
-        <p class="text-center">07:00 至 10:00</p>
-      </div>
-      <div class="pt-3 text-light">
-        <p class="text-black text-center bg-i-gold">MG棋牌</p>
-        <p class="text-center">11:00 至 13:00</p>
-      </div>
-      <div class="pt-3 text-light">
-        <p class="text-center" style="height: 1px;width: 100%;background: #555;"></p>
-      </div>
-      <div class="pt-3 text-light">
-        <p class="text-center">星期四</p>
-        <p class="text-black text-center bg-i-gold">SimplePlay電子</p>
-        <p class="text-center">11:00 至 13:30</p>
-      </div>
-      <div class="pt-3 text-light">
-        <p class="text-center" style="height: 1px;width: 100%;background: #555;"></p>
-      </div>
-      <div class="pt-3 text-light">
-        <p class="text-center">星期五</p>
-        <p class="text-black text-center bg-i-gold">SimplePlay電子</p>
-        <p class="text-center">15:00 至 19:00</p>
-      </div>
-      <div class="pt-3 text-light">
-        <p class="text-center" style="height: 1px;width: 100%;background: #555;"></p>
-      </div>
-      <div class="py-2 text-light">
-        <p class="text-center">星期日</p>
-        <p class="text-black text-center bg-i-gold">BNG電子</p>
-        <p class="text-center">14:30 至 02:30</p>
-      </div>
+      <a id="repairBotton" class="p-0 col-6"><img src="./卡-img/桌機index_img/維修.png" class="img-fluid p-0 m-0" alt=""></a>
     </div>
   </div>
 
@@ -654,14 +661,14 @@
   </div>
   <!-- 相通 ------------------------------------------------------------------------>
   <!-- marquee -->
-  <div id="" class="container-fluid p-0 m-0">
+  <div class="container-fluid p-0 m-0">
     <div class="bgc-flex" style="background-color: black; height: 28px;">
       <div class="row p-0 m-0">
         <div class="text-center" style="width: 10%;">
           <img src="./img/手機index_img/marqueeA.png" class="img-fluid" alt="">
         </div>
         <div class="" style="width: 88%;">
-          <marquee direction="left" height="10" scrollamount="5" behavior="left" class="text-light h-100"
+          <marquee uk-toggle="target: #modal-example3" direction="left" height="10" scrollamount="5" behavior="left" class="text-light h-100"
             onmouseover="this.stop()" onmouseout="this.start()">
             【維護公告】 親愛的娛樂城會員您好，【幸運棋牌-維護通知】即刻起進行線路調整緊急維護，維護完成時間待定，造成不便敬請見諒    【存款公告】
             開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可    【存款公告】
@@ -669,11 +676,201 @@
             親愛的會員您好，AV影城將於2020/12/14正式下架，造成不便敬請見諒。    【取款公告】
             親愛的卡利會員您好，由於體育注單會因改判賽事等因素，而進行注單重新結算，因此即日起，卡利娛樂城進行出款時，體育相關注單須全數派彩完畢才處理支付款項，若玩家手上有未派彩注單，麻煩您耐心等候，如有相關疑問、歡迎諮詢24H線上客服，謝謝您。
           </marquee>
+          <div id='modal-example3' uk-modal>
+            <div class='uk-modal-dialog w3-round-large'>
+              <div class='px-3 py-1 bgc-loginbar-color  row' style=' border-radius: 8px 8px 0 0;'>
+                <span class="pl-2 centerCenter font-weight-bold fsz-13">會員通知</span>
+                <button class='uk-modal-close-default text-dark' type='button' uk-close></button>
+              </div>
+              <div class="bg-theme px-2 pt-3 pb-2">
+                <h2 class="text-light text-center" style="border-bottom: #ea9127 5px solid;">公告專區</h2>
+                <ul uk-accordion class="bg-theme py-3 px-5 w3-round-medium my-3">
+                  <!-- 1 -->
+                  <li class="uk-open">
+                      <a class="uk-accordion-title fsz-1 BlogTextColor p-2 w3-round-large slotBg"
+                          href="#">卡利網站的取款規定</a>
+                      <div class="uk-accordion-content">
+                          <p class="fsz-08 text-light">1. 一般存款沒有享受任何優惠的情況下，達到1倍流水即可出款
+                              <br>
+                              2. 一週三次，一天最多一次免手續費，每日超過免費次數，收取1%、2%手續費…最高5%
+                              <br>
+                              3. 第一次出金需要提供雙證件(身分證+駕照或健保卡)以及存摺依照客服指示放置物品，並傳送圖片檔案給客服確認
+                              <br>
+                              4. 有任何相關疑問請洽客服聯繫
+                              <br>
+                          </p>
+                      </div>
+                  </li>
+                  <!-- 2 -->
+                  <li>
+                      <a class="uk-accordion-title fsz-1 BlogTextColor p-2 w3-round-large slotBg"
+                          href="#">卡利網站的取款規定</a>
+                      <div class="uk-accordion-content">
+                          <p class="fsz-08 text-light">
+                              電腦版，點擊上方各廳流水>選擇要查詢的期間>點擊搜尋，即可查詢各廳流水
+                              <br>
+                              手機版，點擊右下方會員中心>各廳流水>選擇要查詢的期間>點擊搜尋，即可查詢各廳流水
+                              <br>
+                              ※流水最多查詢15天
+                              <br>
+                          </p>
+                      </div>
+                  </li>
+                  <li>
+                      <a class="uk-accordion-title fsz-1 BlogTextColor p-2 w3-round-large slotBg"
+                          href="#">怎樣應允第三方cookies在手機裏?</a>
+                      <div class="uk-accordion-content">
+                          <p class="fsz-08 textOrange">[安卓] 瀏覽器 - Google Chrome</p>
+                          <p class="fsz-08 text-light">
+                              1. 在安卓手機或者平板電腦, 打開Chrome
+                              <br>
+                              2. 往右上角, 按更多然後設定
+                              <br>
+                              3. 按網頁設定然後Cookies
+                              <br>
+                              4. 可以從哪裏設定開或者關
+                              <br>
+                              5. 可選: 選擇應允第三方 cookies
+                              <br>
+                          </p>
+                          <p class="fsz-08 textOrange">[安卓] 瀏覽器 - Firefox</p>
+                          <p class="fsz-08 text-light">
+                              1. 打開 Firefox
+                              <br>
+                              2. 按目錄 (在某些設備的下方或者在網頁上的右上方)
+                              <br>
+                              3. 按設定 (或者需要按更多先)
+                              <br>
+                              4. 按隱私
+                              <br>
+                              5. 按啟用
+                              <br>
+                          </p>
+                          <p class="fsz-08 textOrange">[IOS] 瀏覽器 - Safari</p>
+                          <p class="fsz-08 text-light">
+                              1. 打開 Safari
+                              <br>
+                              2. 選擇設定
+                              <br>
+                              3. 在隱私&安全, 按阻止Cookies / 接受Cookies
+                              <br>
+                              4. 一直應允或者只有指定網頁被選擇
+                              <br>
+                          </p>
+                      </div>
+                  </li>
+                  <!-- 5 -->
+                  <li>
+                      <a class="uk-accordion-title fsz-1 BlogTextColor p-2 w3-round-large slotBg"
+                          href="#">怎樣清除緩存在手機裏?</a>
+                      <div class="uk-accordion-content">
+                          <p class="fsz-08 textOrange">[安卓] 瀏覽器 - Google Chrome</p>
+                          <p class="fsz-08 text-light">
+                              1. 打開Chrome
+                              <br>
+                              2. 按更多然後設定
+                              <br>
+                              3. 在高級設定裏， 按隱私然後選擇清除瀏覽數據
+                              <br>
+                              4. 在上面, 下拉的選單中 "清除資料"
+                              <br>
+                              5. 選擇想要清除的時間
+                              <br>
+                              6. 選擇想清除的選項
+                              <br>
+                              7. 按清除資料
+                              <br>
+                          </p>
+                          <p class="fsz-08 textOrange">[安卓] 瀏覽器 - Firefox</p>
+                          <p class="fsz-08 text-light">
+                              1. 打開 Firefox
+                              <br>
+                              2. 按目錄 (在某些設備的下方或者在網頁上的右上方)
+                              <br>
+                              3. 按設定 (或者需要先按更多)
+                              <br>
+                              4. 按清除資料
+                              <br>
+                              5. 選擇想要清除的資料然後按清除
+                              <br>
+                          </p>
+                          <p class="fsz-08 textOrange">[IOS] 瀏覽器 - Safari</p>
+                          <p class="fsz-08 text-light">
+                              1. 打開 Safari
+                              <br>
+                              2. 選擇設定
+                              <br>
+                              3. 按清除歷史資料
+                              <br>
+                              4. 按確定
+                              <br>
+                          </p>
+                      </div>
+                  </li>
+                  <!-- 6 -->
+                  <li>
+                      <a class="uk-accordion-title fsz-1 BlogTextColor p-2 w3-round-large slotBg" href="#">推薦金優惠介紹</a>
+                      <div class="uk-accordion-content">
+                          <p class="fsz-08 text-light">
+                              介紹好友即可獲得推薦金500，註冊時可填寫推薦碼(推薦人遊戲帳號)，並於註冊完成後24小時之內聯繫在線客服申請
+                              <br>
+                              1. 提供被推薦人帳號、電話、lineID予在線客服進行申請
+                              <br>
+                              2. 推薦人(舊會員)以及被推薦人(新會員)都須有存款1000以上之記錄(有領優惠之該筆存款不予計算)
+                              <br>
+                              3. 每位相同註冊資料包含IP位置的新會員僅限被推薦一次，且需完成銀行綁定
+                              <br>
+                              4. 舊會員可推薦多位好友，推薦優惠金無上限
+                              <br>
+                              5. 該優惠進行彩票以及棋牌類型投注將不計算出款流水
+                              <br>
+                              6. 若會員有重複註冊帳號惡意套取優惠或其他非正當盈利之行為，將扣除優惠以及所有不當盈利
+                              <br>
+                              7. 出款流水僅需一倍即可
+                              <br>
+                              8. 若同時推薦多位好友，每位都需有存1000以上之紀錄(有領優惠之該筆存款不予計算)，推薦人也需再存款1000以上之紀錄(有領優惠之該筆存款不
+                              予計算)
+                              <br>
+                              9. 僅限網站上直營會員享有此優惠
+                              <br>
+                          </p>
+                      </div>
+                  </li>
+                  <!-- 7 -->
+                  <li>
+                      <a class="uk-accordion-title fsz-1 BlogTextColor p-2 w3-round-large slotBg" href="#">推薦金優惠介紹</a>
+                      <div class="uk-accordion-content">
+                          <p class="fsz-08 text-light">
+                              所有取款條件與會員優惠，卡利擁有無可爭議的權利，若發現有套利客戶，對賭或不誠實獲取盈利之行為，將取消其優惠資格並扣除盈利和本金。
+                              包含對沖、單邊投注、翻倍投注、惡意套利等違規投注行為
+                              <br>
+                              ※一個會員僅能有一個遊戲帳號，若有多個遊戲帳號，核對資料後將會做關閉，無法做移分，只留一個遊戲帳號。
+                              <br>
+                          </p>
+                      </div>
+                  </li>
+              </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+<!-- This is a button toggling the modal
+<button class="uk-button uk-button-default uk-margin-small-right" type="button">Open</button> -->
 
+<!-- This is the modal -->
+<div id="modal-example" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title">Headline</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            <button class="uk-button uk-button-primary" type="button">Save</button>
+        </p>
+    </div>
+</div>
   <!-- 主畫面--------------------------------------------------------------------------------- -->
   <div class="container-fluid p-0 m-0 bgc-flex-v" style="background:url(./卡-img/桌機index_img/bg.png) center;" id="axc">
     <div class="container p-0 pb-3" style="padding-bottom: 5em;">
