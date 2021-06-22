@@ -280,7 +280,7 @@ a .BlogGameTColor:hover {
 }
 
 .slotBg {
-    background: linear-gradient(90deg, #1e1549, #3d1f5e, #412e7d);
+    background: linear-gradient(90deg, #412e7d, #1e1549, #3d1f5e, #412e7d);
 }
 
 .slotBg-v {
@@ -326,6 +326,13 @@ a .BlogGameTColor:hover {
 ::-webkit-scrollbar-thumb {
     background: #ea9127;
     border-radius: 10px;
+}
+
+.grayscale{
+    filter:grayscale(1)
+}
+.grayscaleAct{
+    filter:grayscale(0)
 }
 
   /* hover */

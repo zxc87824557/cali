@@ -68,15 +68,15 @@
     <!-- 通用  ------------------------------------------------------------------------>
 
     <!-- MD history.back ------------------------------------------------------------------------>
-    <div class="pt-1 d-md-none BlogGameBg1">
+    <div class="pt-1 d-md-none bgc-loginbar-color">
         <nav aria-label="breadcrumb">
             <ul class="d-flex py-0 py-sm-1">
                 <button class="btn py-0" type="button" onclick="history.back()" value="回到上一頁">
-                    <i class="fas fa-angle-left text-light fa-lg"></i>
+                    <i class="fas fa-angle-left text-black fa-lg"></i>
                 </button>
-                <li class="breadcrumb-item"><a href="../index.html" class="text-light">首頁</a></li>
+                <li class="breadcrumb-item"><a href="../index.html" class="text-black font-weight-bold">首頁</a></li>
                 <li class="breadcrumb-item active" aria-current="page">
-                    <span class="text-light pl-2" id="copyTitle"></span>
+                    <span class="text-black font-weight-bold" id="copyTitle"></span>
                 </li>
             </ul>
         </nav>
@@ -90,10 +90,10 @@
 
 
     <div class="container-fluid p-0 m-0 bgc-flex-v" style="background-image: url(../卡-img/桌機index_img/bg1.png);">
-        <div class="container py-3">
+        <div class="container p-0 pb-3">
             <!-- PC ------------------------------------------------------------------------>
-            <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/Banner.png" alt="">
-            <div class="bg-theme">
+            <div class="bg-theme d-none d-md-block">
+                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/Banner.png" alt="">
                 <!--  -->
                 <ul class="uk-subnav uk-subnav-pill my-3 pt-3 px-3 pb-0 centerCenter mx-1 row" uk-switcher>
                     <!--  -->
@@ -147,102 +147,317 @@
                     <!-- 真人 -->
                     <li class="">
                         <div class="row p-3 m-0">
-                            <div
-                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
-                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/卡利百家樂.png" alt="">
-                            </div>
-                            <div
-                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
-                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/歐博百家樂.png" alt="">
-                            </div>
-                            <div
-                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
-                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/沙龍百家樂.png" alt="">
-                            </div>
-                            <div
-                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
-                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/DG百家樂.png" alt="">
-                            </div>
-                            <div
-                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
-                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/WM百家樂.png" alt="">
-                            </div>
+                            <a class=" col-4" href="../page/LiveCasino.html">
+                                <div
+                                    class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
+                                    <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/卡利百家樂.png" alt="">
+                                </div>
+                            </a>
+                            <a class=" col-4" href="../page/LiveCasino.html">
+                                <div
+                                    class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
+                                    <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/歐博百家樂.png" alt="">
+                                </div>
+                            </a>
+                            <a class=" col-4" href="../page/LiveCasino.html">
+                                <div
+                                    class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
+                                    <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/沙龍百家樂.png" alt="">
+                                </div>
+                            </a>
+                            <a class=" col-6" href="../page/LiveCasino.html">
+                                <div
+                                    class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
+                                    <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/DG百家樂.png" alt="">
+                                </div>
+                            </a>
+                            <a class=" col-6" href="../page/LiveCasino.html">
+                                <div
+                                    class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
+                                    <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/WM百家樂.png" alt="">
+                                </div>
+                            </a>
                         </div>
                     </li>
                     <!-- 體育 -->
                     <li class="">
                         <div class="row p-3 m-0">
-                            <div
-                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
-                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/卡利體育.png" alt="">
-                            </div>
-                            <div
-                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
-                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/Super體育.png" alt="">
-                            </div>
+                            <a class=" col-6" href="../page/Sport.html">
+                                <div
+                                    class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
+                                    <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/卡利體育.png" alt="">
+                                </div>
+                            </a>
+                            <a class=" col-6" href="../page/Sport.html">
+                                <div
+                                    class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
+                                    <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/Super體育.png" alt="">
+                                </div>
+                            </a>
                         </div>
                     </li>
                     <!-- 賓果 -->
                     <li class="">
                         <div class="row p-3 m-0">
-                            <div
-                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
-                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/Super六合彩.png" alt="">
-                            </div>
-                            <div
-                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
-                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/9K彩票.png" alt="">
-                            </div>
+                            <a class=" col-6" href="../page/Bingo.html">
+                                <div
+                                    class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
+                                    <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/Super六合彩.png" alt="">
+                                </div>
+                            </a>
+                            <a class=" col-6" href="../page/Bingo.html">
+                                <div
+                                    class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
+                                    <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/9K彩票.png" alt="">
+                                </div>
+                            </a>
                         </div>
                     <!-- 真人 -->
                     </li>
                     <!-- 電子 -->
                     <li class="">
                         <div class="row p-3 m-0">
-                            <div
-                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
-                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/RTG電子.png" alt="">
-                            </div>
-                            <div
-                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
-                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/DT電子.png" alt="">
-                            </div>
-                            <div
-                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
-                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/SimplePlay電子.png" alt="">
-                            </div>
+                            <a class=" col-4" href="../page/Slot.html">
+                                <div
+                                    class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
+                                    <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/DT電子.png" alt="">
+                                </div>
+                            </a>
+                            <a class=" col-4" href="../page/Slot.html">
+                                <div
+                                    class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
+                                    <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/RTG電子.png" alt="">
+                                </div>
+                            </a>
+                            <a class=" col-4" href="../page/Slot.html">
+                                <div
+                                    class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
+                                    <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/SimplePlay電子.png" alt="">
+                                </div>
+                            </a>
                         </div>
                     </li>
                     <!-- 棋牌 -->
                     <li class="">
                         <div class="row p-3 m-0">
-                            <div
-                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
-                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/MG棋牌.png" alt="">
-                            </div>
-                            <div
-                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
-                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/至尊棋牌.png" alt="">
-                            </div>
+                            <a class=" col-6" href="../page/Chess.html">
+                                <div
+                                    class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
+                                    <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/MG棋牌.png" alt="">
+                                </div>
+                            </a>
+                            <a class=" col-6" href="../page/Chess.html">
+                                <div
+                                    class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
+                                    <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/至尊棋牌.png" alt="">
+                                </div>
+                            </a>
                         </div>
                     <!-- 真人 -->
                     </li>
                     <!-- 捕魚 -->
                     <li class="">
                         <div class="row p-3 m-0">
-                            <div
-                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
-                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/SimplePlay捕魚王.png" alt="">
-                            </div>
-                            <div
-                                class="btn col-4 centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
-                                <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/RTG捕魚王.png" alt="">
-                            </div>
+                            <a class=" col-6" href="../page/Fish.html">
+                                <div
+                                    class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
+                                    <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/SimplePlay捕魚王.png" alt="">
+                                </div>
+                            </a>
+                            <a class=" col-6" href="../page/Fish.html">
+                                <div
+                                    class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3 w3-hover-opacity">
+                                    <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/RTG捕魚王.png" alt="">
+                                </div>
+                            </a>
                         </div>
                     </li>
                 </ul>
             </div>
-
+            <!-- md ------------------------------------------------------------------------>
+            <div class="d-md-none p-0 m-0">
+                <img class="" src="../卡-img/手機各分頁img/代理/Banner.png" alt="">
+                <div class="bg-theme pb-4">
+                    <ul class="uk-subnav uk-subnav-pill my-2 pt-2 px-2 pb-0 centerCenter mx-1 row" uk-switcher>
+                        <!--  -->
+                        <li class="col-2 col-md-4 p-1">
+                            <a href="#" class="border border-secondary w3-round-medium">
+                                <p class="fsz-08 centerCenter">
+                                    真人娛樂
+                                </p>
+                            </a>
+                        </li>
+                        <li class="col-2 col-md-4 p-1">
+                            <a href="#" class="border border-secondary w3-round-medium">
+                                <p class="fsz-08 centerCenter">
+                                    體育博彩
+                                </p>
+                            </a>
+                        </li>
+                        <li class="col-2 col-md-4 p-1">
+                            <a href="#" class="border border-secondary w3-round-medium">
+                                <p class="fsz-08 centerCenter">
+                                    賓果彩票
+                                </p>
+                            </a>
+                        </li>
+                        <li class="col-2 col-md-4 p-1">
+                            <a href="#" class="border border-secondary w3-round-medium">
+                                <p class="fsz-08 centerCenter">
+                                    電子游戲
+                                </p>
+                            </a>
+                        </li>
+                        <li class="col-2 col-md-4 p-1">
+                            <a href="#" class="border border-secondary w3-round-medium">
+                                <p class="fsz-08 centerCenter">
+                                    棋牌遊戲
+                                </p>
+                            </a>
+                        </li>
+                        <li class="col-2 col-md-4 p-1">
+                            <a href="#" class="border border-secondary w3-round-medium">
+                                <p class="fsz-08 centerCenter">
+                                    捕魚街機
+                                </p>
+                            </a>
+                        </li>
+    
+                    </ul>
+    
+                    <!--  -->
+                    <ul class="uk-switcher uk-margin">
+                        <!-- 真人 -->
+                        <li class="">
+                            <div class="row m-0">
+                                <a class=" col-12" href="../page/LiveCasino.html">
+                                    <div
+                                        class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
+                                        <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/卡利百家樂.png" alt="">
+                                    </div>
+                                </a>
+                                <a class=" col-6" href="../page/LiveCasino.html">
+                                    <div
+                                        class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
+                                        <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/歐博百家樂.png" alt="">
+                                    </div>
+                                </a>
+                                <a class=" col-6" href="../page/LiveCasino.html">
+                                    <div
+                                        class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
+                                        <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/沙龍百家樂.png" alt="">
+                                    </div>
+                                </a>
+                                <a class=" col-6" href="../page/LiveCasino.html">
+                                    <div
+                                        class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
+                                        <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/DG百家樂.png" alt="">
+                                    </div>
+                                </a>
+                                <a class=" col-6" href="../page/LiveCasino.html">
+                                    <div
+                                        class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
+                                        <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/WM百家樂.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <!-- 體育 -->
+                        <li class="">
+                            <div class="row p-3 m-0">
+                                <a class=" col-12" href="../page/Sport.html">
+                                    <div
+                                        class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
+                                        <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/卡利體育.png" alt="">
+                                    </div>
+                                </a>
+                                <a class=" col-12" href="../page/Sport.html">
+                                    <div
+                                        class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
+                                        <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/Super體育.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <!-- 賓果 -->
+                        <li class="">
+                            <div class="row p-3 m-0">
+                                <a class=" col-12" href="../page/Bingo.html">
+                                    <div
+                                        class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
+                                        <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/Super六合彩.png" alt="">
+                                    </div>
+                                </a>
+                                <a class=" col-12" href="../page/Bingo.html">
+                                    <div
+                                        class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
+                                        <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/9K彩票.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        <!-- 真人 -->
+                        </li>
+                        <!-- 電子 -->
+                        <li class="">
+                            <div class="row p-3 m-0">
+                                <a class=" col-12" href="../page/Slot.html">
+                                    <div
+                                        class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
+                                        <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/DT電子.png" alt="">
+                                    </div>
+                                </a>
+                                <a class=" col-12" href="../page/Slot.html">
+                                    <div
+                                        class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
+                                        <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/RTG電子.png" alt="">
+                                    </div>
+                                </a>
+                                <a class=" col-12" href="../page/Slot.html">
+                                    <div
+                                        class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
+                                        <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/SimplePlay電子.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <!-- 棋牌 -->
+                        <li class="">
+                            <div class="row p-3 m-0">
+                                <a class=" col-12" href="../page/Chess.html">
+                                    <div
+                                        class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
+                                        <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/MG棋牌.png" alt="">
+                                    </div>
+                                </a>
+                                <a class=" col-12" href="../page/Chess.html">
+                                    <div
+                                        class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
+                                        <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/至尊棋牌.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        <!-- 真人 -->
+                        </li>
+                        <!-- 捕魚 -->
+                        <li class="">
+                            <div class="row p-3 m-0">
+                                <a class=" col-12" href="../page/Fish.html">
+                                    <div
+                                        class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
+                                        <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/SimplePlay捕魚王.png" alt="">
+                                    </div>
+                                </a>
+                                <a class=" col-12" href="../page/Fish.html">
+                                    <div
+                                        class="centerCenter slotBg border border-secondary w3-round-medium p-3 my-1 my-md-3">
+                                        <img class="img-fluid" src="../卡-img/桌機各分頁img/產品介紹/RTG捕魚王.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <!-- PCFooter -->
             <div class="d-none d-md-block pt-3">
                 <script>
